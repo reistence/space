@@ -9,6 +9,7 @@ export function Spaceboi(props) {
   const { nodes, materials } = useGLTF("/space_boi.glb");
   const [mousePos, setMousePos] = useState({});
   const spaceRef = useRef();
+  const particlesRef = useRef();
   const [active, setActive] = useState(false);
   const { rotation } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
@@ -40,7 +41,8 @@ export function Spaceboi(props) {
   // });
 
   useFrame(() => {
-    // spaceRef.current.rotation.y += 0.0001;
+    // particlesRef.current.rotation.z += 0.0001;
+    particlesRef.current.rotation.z += 0.0001;
   });
   return (
     <group {...props} dispose={null} ref={spaceRef}>
@@ -135,6 +137,17 @@ export function Spaceboi(props) {
         <mesh
           castShadow
           receiveShadow
+          ref={particlesRef}
+          geometry={nodes.particles_Material002_0.geometry}
+          material={materials["Material.002"]}
+          position={[489.69, 793.811, 355.293]}
+          rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
+          scale={20.408}
+        />
+        <mesh
+          castShadow
+          receiveShadow
+          ref={particlesRef}
           geometry={nodes.particles_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[489.69, 793.811, 355.293]}
