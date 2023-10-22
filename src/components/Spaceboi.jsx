@@ -3,7 +3,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useSpring, animated, config } from "@react-spring/three";
+import { useSpring, animated } from "@react-spring/three";
 
 export function Spaceboi(props) {
   const { nodes, materials } = useGLTF("/space_boi.glb");
@@ -40,7 +40,7 @@ export function Spaceboi(props) {
   // });
 
   useFrame(() => {
-    spaceRef.current.rotation.y += 0.001;
+    // spaceRef.current.rotation.y += 0.0001;
   });
   return (
     <group {...props} dispose={null} ref={spaceRef}>
@@ -168,6 +168,7 @@ export function Spaceboi(props) {
           rotation={[-0.688, 0, 0]}
           scale={[104.129, 81.609, 0]}
         />
+
         <mesh
           castShadow
           receiveShadow
@@ -186,6 +187,7 @@ export function Spaceboi(props) {
           rotation={[-Math.PI / 2, 0, 0]}
           scale={60.324}
         />
+        {/* White Planet */}
         <mesh
           castShadow
           receiveShadow
