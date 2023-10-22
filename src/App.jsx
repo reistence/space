@@ -1,5 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import "./App.css";
+import WebFont from "webfontloader";
+import "./App.scss";
 import { OrbitControls, ScrollControls, useScroll } from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
 import {
@@ -11,12 +12,15 @@ import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
 
 import fly from "./fly.json";
+import { useEffect } from "react";
+import Header from "./components/Header/Header";
 
 function App() {
   const sheet = getProject("Fly Through", { state: fly }).sheet("Scene");
 
   return (
     <>
+      <Header />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
         <ScrollControls pages={20} damping={1} maxSpeed={0.3}>
           <SheetProvider sheet={sheet}>
