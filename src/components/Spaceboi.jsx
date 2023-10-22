@@ -26,18 +26,18 @@ export function Spaceboi(props) {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  useFrame(({ mouse }) => {
-    if (spaceRef.current && active) {
-      const { x, y } = mouse;
-      // Calculate the rotation angles to make the model face the mouse
-      const dx = x * 2 - 1;
-      const dy = y * -2 + 1;
-      const angle = Math.atan2(dy, dx);
+  // useFrame(({ mouse }) => {
+  //   if (spaceRef.current && active) {
+  //     const { x, y } = mouse;
+  //     // Calculate the rotation angles to make the model face the mouse
+  //     const dx = x * 2 - 1;
+  //     const dy = y * -2 + 1;
+  //     const angle = Math.atan2(dy, dx);
 
-      // Apply the rotation to the model
-      spaceRef.current.rotation.y = angle;
-    }
-  });
+  //     // Apply the rotation to the model
+  //     spaceRef.current.rotation.y = angle;
+  //   }
+  // });
 
   useFrame(() => {
     spaceRef.current.rotation.y += 0.001;
