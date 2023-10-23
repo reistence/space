@@ -12,14 +12,28 @@ import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
 
 import fly from "./fly.json";
-import { useEffect } from "react";
+import { useEffect, useRef } from "react";
 import Header from "./components/Header/Header";
 
 function App() {
+  const cursor = useRef(null);
+  const changePosition = (e) => {
+    cursor.current.style.top = `${e.clientY}px`;
+    cursor.current.style.left = `${e.clientX}px`;
+  };
+
+  const showCursor = () => (cursor.current.style.display = "block");
+  const hideCursor = () => (cursor.current.style.display = "none");
+
   const sheet = getProject("Fly Through", { state: fly }).sheet("Scene");
 
   return (
-    <>
+    <div
+      className="main-container"
+      onMouseMove={changePosition}
+      onMouseLeave={hideCursor}
+      onMouseEnter={showCursor}
+    >
       <Header />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
         <ScrollControls pages={20} damping={1} maxSpeed={0.3}>
@@ -28,7 +42,8 @@ function App() {
           </SheetProvider>
         </ScrollControls>
       </Canvas>
-    </>
+      <div className="cursor-style" ref={cursor}></div>
+    </div>
   );
 }
 
