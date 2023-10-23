@@ -1,9 +1,15 @@
+@font-face {
+  font-family: "space";
+  src: url("/font/Dashhorizon-eZ5wg.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 
-  font-family: "Covered By Your Grace", cursive;
+  font-family: "space", cursive;
   color: white;
 }
 

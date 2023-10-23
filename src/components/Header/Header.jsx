@@ -4,7 +4,7 @@ import styles from "./header.module.scss";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function Header() {
-  const initialValue = "REISTENCE";
+  const initialValue = "reistence";
   const [text, setText] = useState(initialValue);
 
   let interval = null;
@@ -21,7 +21,7 @@ function Header() {
               return initialValue.charAt(index);
             }
 
-            return letters[Math.floor(Math.random() * 26)];
+            return letters.toLowerCase()[Math.floor(Math.random() * 26)];
           })
           .join("")
       );
