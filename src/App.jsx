@@ -15,6 +15,7 @@ import fly from "./fly.json";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
+import Direction from "./components/Direction/Direction";
 
 function App() {
   const cursor = useRef(null);
@@ -77,6 +78,8 @@ function App() {
     []
   );
 
+  console.log(currentPageValue);
+
   return (
     <div
       className="main-container"
@@ -97,6 +100,7 @@ function App() {
           </SheetProvider>
         </ScrollControls>
       </Canvas>
+      <Direction currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
     </div>
   );

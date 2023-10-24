@@ -13,7 +13,7 @@ export function Spaceboi(props) {
   const [active, setActive] = useState(false);
   const { rotation } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
-    rotation: [0, 0, mousePos.x / window?.innerWidth],
+    rotation: [0, 0, mousePos.x ? mousePos.x / window?.innerWidth : 0],
   });
 
   useLayoutEffect(() => {

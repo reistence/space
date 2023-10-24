@@ -4,4 +4,15 @@
   left: 50%;
   z-index: 999;
   transform: translate(-50%, -50%);
+  animation: rotate 2s linear 0s infinite normal forwards;
+}
+
+@keyframes rotate {
+  0% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(360deg);
+  }
 }
