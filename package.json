@@ -19,6 +19,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "sass": "^1.69.4",
+    "shuffle-letters": "^1.1.0",
     "three": "^0.157.0",
     "webfontloader": "^1.6.28"
   },

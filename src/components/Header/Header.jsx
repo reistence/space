@@ -1,6 +1,6 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import styles from "./header.module.scss";
-
+import shuffleLetters from "shuffle-letters";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function Header() {
@@ -34,6 +34,12 @@ function Header() {
       iteration += 1 / 3;
     }, 60);
   };
+
+  useEffect(() => {
+    shuffleLetters(document.querySelector("h3"), {
+      fps: 10,
+    });
+  }, []);
 
   return (
     <header>
