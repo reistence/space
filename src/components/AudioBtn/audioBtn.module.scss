@@ -1,0 +1,68 @@
+.btn {
+  width: 1em;
+  height: 2em;
+  position: absolute;
+  top: 5em;
+  left: 1em;
+  z-index: 999;
+  opacity: 0.6;
+  transition: all 200ms;
+
+  &.play {
+    animation: entrance 200ms ease 0s 1 normal forwards;
+    &::before {
+      content: "";
+      background-image: url("./../../assets/icons/bars.png");
+      position: absolute;
+      top: 0px;
+      left: 17px;
+      width: 1em;
+      height: 2em;
+      background-size: contain;
+      background-position: center;
+      background-repeat: no-repeat;
+    }
+  }
+  &.mute {
+    animation: exit 0.2s ease 0s 1 normal forwards;
+    //   &::before {
+    //     content: "";
+    //   }
+  }
+
+  & > .icon {
+    object-fit: contain;
+    width: 100%;
+    height: 100%;
+    animation: entrance 200ms ease 0s 1 normal forwards;
+    position: relative;
+    // transform: rotate(188deg);
+    &:hover {
+      transition: all 200ms;
+      opacity: 1;
+    }
+  }
+}
+
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+@keyframes exit {
+  0% {
+    opacity: 1;
+    transform: scale(1);
+  }
+
+  100% {
+    opacity: 0;
+    transform: scale(0.6);
+  }
+}

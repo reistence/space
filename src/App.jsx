@@ -1,5 +1,4 @@
 import { Canvas, useFrame } from "@react-three/fiber";
-import WebFont from "webfontloader";
 import "./App.scss";
 import { OrbitControls, ScrollControls, useScroll } from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
@@ -15,6 +14,7 @@ import volumeIcon from "./assets/icons/volume.png";
 import fly from "./fly.json";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header/Header";
+import AudioBtn from "./components/AudioBtn/AudioBtn";
 
 function App() {
   const cursor = useRef(null);
@@ -85,16 +85,8 @@ function App() {
       onMouseEnter={showCursor}
     >
       <Header />
-      <div
-        style={{ zIndex: 9999, position: "absolute", top: 0, right: 0 }}
-        onClick={handleSoundToggle}
-      >
-        {isMuted ? (
-          <img src={muteIcon} alt="" />
-        ) : (
-          <img src={volumeIcon} alt="" />
-        )}
-      </div>
+
+      <AudioBtn handleSoundToggle={handleSoundToggle} isMuted={isMuted} />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
         <ScrollControls pages={20} damping={1} maxSpeed={0.3}>
           <SheetProvider sheet={sheet}>
