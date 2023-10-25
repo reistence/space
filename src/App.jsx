@@ -9,13 +9,13 @@ import {
 } from "@theatre/r3f";
 import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
-import muteIcon from "./assets/icons/mute.png";
-import volumeIcon from "./assets/icons/volume.png";
+
 import fly from "./fly.json";
 import { useEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
 import Direction from "./components/Direction/Direction";
+import About from "./components/Sections/About/About";
 
 function App() {
   const cursor = useRef(null);
@@ -100,6 +100,7 @@ function App() {
           </SheetProvider>
         </ScrollControls>
       </Canvas>
+      <About currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
     </div>

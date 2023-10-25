@@ -1,5 +1,5 @@
 .btn {
-  width: 1em;
+  width: 2em;
   height: 2em;
   position: absolute;
   top: 5em;
@@ -14,10 +14,11 @@
       content: "";
       background-image: url("./../../assets/icons/bars.png");
       position: absolute;
-      top: 0px;
-      left: 17px;
+      bottom: -16px;
+      right: 2px;
       width: 1em;
       height: 2em;
+      transform: rotate(72deg);
       background-size: contain;
       background-position: center;
       background-repeat: no-repeat;

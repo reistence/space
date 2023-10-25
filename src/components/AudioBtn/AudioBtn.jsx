@@ -1,7 +1,7 @@
 import React from "react";
 import styles from "./audioBtn.module.scss";
-import muteIcon from "../../assets/icons/mute.png";
-import volumeIcon from "../../assets/icons/volume.png";
+
+import ufo from "../../assets/icons/ufo.png";
 
 const AudioBtn = ({ handleSoundToggle, isMuted }) => {
   return (
@@ -9,7 +9,7 @@ const AudioBtn = ({ handleSoundToggle, isMuted }) => {
       className={`${styles.btn} ${!isMuted ? styles.play : ""}`}
       onClick={handleSoundToggle}
     >
-      <img className={`${styles.icon} `} src={muteIcon} alt="" />
+      <img className={`${styles.icon} `} src={ufo} alt="" />
     </div>
   );
 };

@@ -1,6 +1,12 @@
 @font-face {
   font-family: "space";
-  src: url("/font/Dashhorizon-eZ5wg.ttf") format("truetype");
+  src: url("/font/LevenGrungeBold.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "space-body";
+  src: url("/font/radio.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -8,7 +14,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
+  letter-spacing: 2px;
   font-family: "space", cursive;
   color: white;
 }
