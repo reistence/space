@@ -11,7 +11,14 @@
   gap: 0.5em;
   align-items: center;
   justify-content: center;
-  animation: pulse 2s ease 0s infinite normal forwards;
+  animation: pulse 3s ease 0s infinite normal forwards;
+  opacity: 0.5;
+  transition: all 200ms;
+
+  &:hover {
+    transition: all 200ms;
+    opacity: 1;
+  }
 
   & > img {
     width: 5em;

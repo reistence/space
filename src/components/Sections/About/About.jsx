@@ -50,11 +50,16 @@ const About = ({ currentPageValue }) => {
       });
       typing.current.play();
     }
-    setTimeout(() => {
+    const timeoutId = setTimeout(() => {
       typing.current.pause();
       typing.current.currentTime = 0;
     }, 5000);
-  }, []);
+
+    // Cleanup function
+    return () => {
+      clearTimeout(timeoutId);
+    };
+  }, [currentPageValue]);
 
   if (currentPageValue == 4) {
     return (
