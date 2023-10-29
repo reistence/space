@@ -140,13 +140,13 @@ const Tooling = ({ currentPageValue }) => {
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={next1} alt="" srcset="" />
+                      <img src={react} alt="" srcset="" />
                     </i>
                   </li>
 
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={react} alt="" srcset="" />
+                      <img src={next1} alt="" srcset="" />
                     </i>
                   </li>
                   <li>
