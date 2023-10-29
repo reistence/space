@@ -2,6 +2,20 @@ import React, { useRef, useState } from "react";
 import styles from "./tooling.module.scss";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
+// icon paths
+import php from "../../../assets/icons/php.png";
+import py from "../../../assets/icons/python.png";
+import react from "../../../assets/icons/react.png";
+import next1 from "../../../assets/icons/nextjs.png";
+import java from "../../../assets/icons/java.png";
+import vue from "../../../assets/icons/vue.png";
+import flask from "../../../assets/icons/flask.png";
+import dj from "../../../assets/icons/dj.png";
+import lara from "../../../assets/icons/lara.png";
+import spring from "../../../assets/icons/spring.png";
+import js from "../../../assets/icons/js.png";
+import astro from "../../../assets/icons/astro.png";
+
 const Tooling = ({ currentPageValue }) => {
   const initialValue = "Tooling";
   const [text, setText] = useState(initialValue);
@@ -69,13 +83,19 @@ const Tooling = ({ currentPageValue }) => {
               <li>
                 <ul className={styles.ring1}>
                   <li>
-                    <i className={styles.orbitIcon}>Flask</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={flask} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>Python</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={py} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>Django</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={dj} alt="" srcset="" />
+                    </i>
                   </li>
                   {/* <li>
                     <i className={styles.orbitIcon}>Laravel</i>
@@ -85,32 +105,54 @@ const Tooling = ({ currentPageValue }) => {
               <li>
                 <ul className={styles.ring2}>
                   <li>
-                    <i className={styles.orbitIcon}>Laravel</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={lara} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>Php</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={php} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>Spring</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={spring} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>Java</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={java} alt="" srcset="" />
+                    </i>
                   </li>
                 </ul>
               </li>
               <li>
                 <ul className={styles.ring3}>
+                  {/* <li>
+                    <i className={styles.orbitIcon}>
+                      <img src={astro} alt="" srcset="" />
+                    </i>
+                  </li> */}
                   <li>
-                    <i className={styles.orbitIcon}>Vue</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={vue} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>Next.js</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={next1} alt="" srcset="" />
+                    </i>
+                  </li>
+
+                  <li>
+                    <i className={styles.orbitIcon}>
+                      <img src={react} alt="" srcset="" />
+                    </i>
                   </li>
                   <li>
-                    <i className={styles.orbitIcon}>React</i>
-                  </li>
-                  <li>
-                    <i className={styles.orbitIcon}>JS</i>
+                    <i className={styles.orbitIcon}>
+                      <img src={js} alt="" srcset="" />
+                    </i>
                   </li>
                 </ul>
               </li>
