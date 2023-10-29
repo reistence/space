@@ -1,6 +1,6 @@
 @font-face {
   font-family: "space";
-  src: url("/font/LevenGrungeBold.ttf") format("truetype");
+  src: url("/font/Fakeblood.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -26,4 +26,8 @@ body,
   height: 100%;
   overflow: hidden;
   background-color: black;
+}
+
+ul {
+  list-style: none;
 }

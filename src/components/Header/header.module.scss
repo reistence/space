@@ -11,6 +11,11 @@ header {
 
   &:hover {
     border-bottom: 0.5px solid rgb(255, 255, 255);
+
+    & > h3 {
+      transition: all 500ms;
+      color: white;
+    }
   }
 
   .container {
@@ -22,6 +27,8 @@ header {
       color: rgba(255, 255, 255, 0.343);
       transition: all 500ms;
       width: 5em;
+      font-size: 30px;
+      width: auto;
       &:hover {
         transition: all 500ms;
         color: white;

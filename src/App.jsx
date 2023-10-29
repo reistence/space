@@ -16,6 +16,7 @@ import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
 import Direction from "./components/Direction/Direction";
 import About from "./components/Sections/About/About";
+import Tooling from "./components/Sections/Tooling/Tooling";
 
 function App() {
   const cursor = useRef(null);
@@ -87,7 +88,7 @@ function App() {
       onMouseLeave={hideCursor}
       onMouseEnter={showCursor}
     >
-      <Header />
+      {/* <Header /> */}
 
       <AudioBtn handleSoundToggle={handleSoundToggle} isMuted={isMuted} />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
@@ -101,6 +102,7 @@ function App() {
         </ScrollControls>
       </Canvas>
       <About currentPageValue={currentPageValue} />
+      <Tooling currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
     </div>
