@@ -61,7 +61,7 @@ const About = ({ currentPageValue }) => {
     // };
   }, [currentPageValue]);
 
-  if (currentPageValue == 4 || currentPageValue == 5) {
+  if (currentPageValue === 4) {
     return (
       <div className={styles.about}>
         <div>
@@ -72,11 +72,12 @@ const About = ({ currentPageValue }) => {
           <div className={styles.pic}>{/* <img src={pic} /> */}</div>
         </div>
         <p ref={pRef}>
-          My name is Valerio and I'm a Full Stack Web Developer based in Milan,
-          Italy. I deeply appreciate the fusion of artistry and functionality in
-          web design. I have an unwavering enthusiasm for crafting digital
-          experiences that are not only visually captivating but also incredibly
-          practical.
+          My name is Valerio and I'm a Full Stack Web Developer. I deeply love
+          the fusion of artistry and functionality even tough this one is
+          neither of them.
+          {/* I have an unwavering
+          enthusiasm for crafting digital experiences that are not only visually
+          captivating but also incredibly practical. */}
         </p>
       </div>
     );

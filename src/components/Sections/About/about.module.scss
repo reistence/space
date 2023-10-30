@@ -3,7 +3,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 70%;
+  width: 45%;
   height: 400px;
   padding: 3em;
   // background-color: rgba(0, 0, 0, 0);
@@ -32,14 +32,14 @@
     }
 
     .pic {
-      width: 9em;
-      height: 9em;
+      width: 5em;
+      height: 5em;
       position: absolute;
       opacity: 0.8;
-      top: -70px;
-      right: -30px;
+      top: -30px;
+      right: 20px;
       border-radius: 50%;
-      box-shadow: inset -2em -2em 2em #000000, -0.5em -0.5em 1em #474747;
+      box-shadow: inset -1em -1em 1em #000000, -0.5em -0.5em 1em #474747;
       background-image: url("./pic.png");
       background-position: center;
       background-size: contain;

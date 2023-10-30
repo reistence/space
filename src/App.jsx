@@ -17,6 +17,7 @@ import AudioBtn from "./components/AudioBtn/AudioBtn";
 import Direction from "./components/Direction/Direction";
 import About from "./components/Sections/About/About";
 import Tooling from "./components/Sections/Tooling/Tooling";
+import Experience from "./components/Sections/Experience/Experience";
 
 function App() {
   const cursor = useRef(null);
@@ -89,6 +90,8 @@ function App() {
     cursor.current.classList.remove("start");
   };
 
+  // cursor
+
   return (
     <div
       className="main-container"
@@ -112,9 +115,13 @@ function App() {
         </ScrollControls>
       </Canvas>
       <About currentPageValue={currentPageValue} />
+
       <Tooling currentPageValue={currentPageValue} />
+      <Experience currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
+      {/* <div className="circle" ref={(el) => circles.current.push(el)}></div>
+      <div className="circle " ref={(el) => circles.current.push(el)}></div> */}
     </div>
   );
 }

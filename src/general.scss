@@ -6,7 +6,7 @@
 }
 @font-face {
   font-family: "space-body";
-  src: url("/font/radio.otf") format("truetype");
+  src: url("/font/Atiba.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -30,4 +30,8 @@ body,
 
 ul {
   list-style: none;
+}
+
+a:hover {
+  cursor: none;
 }
