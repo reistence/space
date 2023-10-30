@@ -8,7 +8,7 @@ const About = ({ currentPageValue }) => {
   const [text, setText] = useState(initialValue);
   const titleRef = useRef();
   const pRef = useRef();
-  const typing = useRef(new Audio("/sounds/data-reveal.mp3"));
+  // const typing = useRef(new Audio("/sounds/data-reveal.mp3"));
 
   let interval = null;
 
@@ -48,17 +48,17 @@ const About = ({ currentPageValue }) => {
       shuffleLetters(pRef.current, {
         fps: 60,
       });
-      typing.current.play();
+      // typing.current.play();
     }
-    const timeoutId = setTimeout(() => {
-      typing.current.pause();
-      typing.current.currentTime = 0;
-    }, 5000);
+    // const timeoutId = setTimeout(() => {
+    //   typing.current.pause();
+    //   typing.current.currentTime = 0;
+    // }, 5000);
 
-    // Cleanup function
-    return () => {
-      clearTimeout(timeoutId);
-    };
+    // // Cleanup function
+    // return () => {
+    //   clearTimeout(timeoutId);
+    // };
   }, [currentPageValue]);
 
   if (currentPageValue == 4) {

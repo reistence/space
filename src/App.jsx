@@ -88,7 +88,7 @@ function App() {
       onMouseLeave={hideCursor}
       onMouseEnter={showCursor}
     >
-      {/* <Header /> */}
+      {/* <Header sheet={sheet} /> */}
 
       <AudioBtn handleSoundToggle={handleSoundToggle} isMuted={isMuted} />
       <Canvas gl={{ preserveDrawingBuffer: true }}>

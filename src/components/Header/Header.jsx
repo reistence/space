@@ -3,7 +3,8 @@ import styles from "./header.module.scss";
 import shuffleLetters from "shuffle-letters";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-function Header() {
+function Header({ sheet }) {
+  console.log(sheet);
   const initialValue = "reistence";
   const [text, setText] = useState(initialValue);
 
