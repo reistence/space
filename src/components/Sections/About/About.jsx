@@ -69,9 +69,7 @@ const About = ({ currentPageValue }) => {
             {text}
           </h3>
 
-          <div className={styles.pic}>
-            <img src={pic} />
-          </div>
+          <div className={styles.pic}>{/* <img src={pic} /> */}</div>
         </div>
         <p ref={pRef}>
           My name is Valerio and I'm a Full Stack Web Developer based in Milan,
