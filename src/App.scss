@@ -12,7 +12,7 @@
     .cursor-style {
       // background-image: url(./assets/icons/spaceship.png);
       // background-image: url(./assets/icons/rocket.png);
-      background-image: url(./assets/icons/rocket-black.png);
+      background-image: url("./assets/icons/rocket-black.png");
       // background-image: url(./assets/icons/meteor.png);
       // background-image: url(./assets/icons/spaceship-black.png);
       background-size: contain;
@@ -24,6 +24,35 @@
       transform: translate(-50%, -50%);
       position: fixed;
       pointer-events: none;
+
+      &.start:before {
+        content: "";
+        background-image: url("./assets/icons/fire.png");
+        position: absolute;
+        bottom: -9px;
+        left: 9px;
+        width: 1em;
+        z-index: 0;
+        height: 1em;
+        background-repeat: no-repeat;
+        transform: rotate(356deg);
+        // transform: rotate(-3deg);
+        background-size: contain;
+        // background-position: top;
+        animation: myAnim 300ms ease 0s 1 normal forwards;
+      }
     }
+  }
+}
+
+@keyframes myAnim {
+  0% {
+    opacity: 0;
+    // transform: translateY(-2px);
+  }
+
+  100% {
+    opacity: 1;
+    // transform: translateY(0);
   }
 }

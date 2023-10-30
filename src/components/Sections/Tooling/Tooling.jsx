@@ -84,17 +84,17 @@ const Tooling = ({ currentPageValue }) => {
                 <ul className={styles.ring1}>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={flask} alt="" srcset="" />
+                      <img src={flask} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={py} alt="" srcset="" />
+                      <img src={py} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={dj} alt="" srcset="" />
+                      <img src={dj} alt="" />
                     </i>
                   </li>
                   {/* <li>
@@ -106,22 +106,22 @@ const Tooling = ({ currentPageValue }) => {
                 <ul className={styles.ring2}>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={lara} alt="" srcset="" />
+                      <img src={lara} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={php} alt="" srcset="" />
+                      <img src={php} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={spring} alt="" srcset="" />
+                      <img src={spring} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={java} alt="" srcset="" />
+                      <img src={java} alt="" />
                     </i>
                   </li>
                 </ul>
@@ -130,28 +130,28 @@ const Tooling = ({ currentPageValue }) => {
                 <ul className={styles.ring3}>
                   {/* <li>
                     <i className={styles.orbitIcon}>
-                      <img src={astro} alt="" srcset="" />
+                      <img src={astro} alt=""  />
                     </i>
                   </li> */}
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={vue} alt="" srcset="" />
+                      <img src={vue} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={react} alt="" srcset="" />
+                      <img src={react} alt="" />
                     </i>
                   </li>
 
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={next1} alt="" srcset="" />
+                      <img src={next1} alt="" />
                     </i>
                   </li>
                   <li>
                     <i className={styles.orbitIcon}>
-                      <img src={js} alt="" srcset="" />
+                      <img src={js} alt="" />
                     </i>
                   </li>
                 </ul>

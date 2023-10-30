@@ -12,7 +12,7 @@
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 50%;
+  width: 60%;
   height: 90%;
   // background-color: rgba(0, 0, 0, 0);
   padding: 3em;
@@ -20,13 +20,16 @@
   display: flex;
   // border-radius: 50%;
   flex-direction: column;
+  justify-content: center;
   gap: 1.5em;
   border-radius: 20px;
   // border: 1px solid white;
   overflow: hidden;
+  animation: entrance 2s ease 0s 1 normal forwards;
+
   // box-shadow: 10px 50px 50px 50px rgba(0, 0, 0, 0.706);
 
-  @media screen and (max-width: 1052px) {
+  @media screen and (max-width: 850px) {
     width: 100%;
   }
 
@@ -643,95 +646,15 @@ animations
     transform: rotate(-360deg);
   }
 }
-/* 
-icons 
-*/
-.fa-heart-o {
-  background: #b71c1c;
-  color: white;
-}
 
-.fa-coffee {
-  background: #4caf50;
-  color: #cddc39;
-}
+@keyframes entrance {
+  0% {
+    opacity: 0;
+    // transform: scale(0.6);
+  }
 
-.fa-safari {
-  background: white;
-  color: darkslateblue;
-}
-
-.fa-firefox {
-  background: #1565c0;
-  color: #ff8f00;
-}
-
-.fa-chrome {
-  background: #fbc02d;
-  color: #ef6c00;
-}
-
-.fa-edge {
-  background: #03a9f4;
-  color: white;
-}
-
-.fa-android {
-  background: snow;
-  color: limegreen;
-}
-
-.fa-apple {
-  background: #444;
-  color: white;
-}
-
-.fa-linux {
-  background: white;
-  color: #222;
-}
-
-.fa-windows {
-  background: white;
-  color: #03a9f4;
-}
-
-.fa-terminal {
-  background: #222;
-  color: #fff;
-}
-
-.fa-html5 {
-  background: white;
-  color: #e65100;
-}
-
-.fa-css3 {
-  background: white;
-  color: #2196f3;
-}
-
-.fa-git {
-  background: #222;
-  color: white;
-}
-
-.fa-free-code-camp {
-  background: green;
-  color: white;
-}
-
-.fa-meetup {
-  background: red;
-  color: white;
-}
-
-.fa-podcast {
-  background: red;
-  color: white;
-}
-
-.fa-codepen {
-  background: #333;
-  color: white;
+  100% {
+    opacity: 1;
+    // transform: scale(1);
+  }
 }

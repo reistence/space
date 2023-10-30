@@ -81,12 +81,22 @@ function App() {
 
   console.log(currentPageValue);
 
+  const startAnimation = () => {
+    cursor.current.classList.add("start");
+  };
+
+  const stopAnimation = () => {
+    cursor.current.classList.remove("start");
+  };
+
   return (
     <div
       className="main-container"
       onMouseMove={changePosition}
-      onMouseLeave={hideCursor}
+      // onMouseLeave={hideCursor}
       onMouseEnter={showCursor}
+      onMouseDown={startAnimation}
+      onMouseUp={stopAnimation}
     >
       {/* <Header sheet={sheet} /> */}
 

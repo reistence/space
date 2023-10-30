@@ -3,7 +3,7 @@
 import React, { useLayoutEffect, useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
-import { useSpring, animated } from "@react-spring/three";
+import { useSpring, animated, config } from "@react-spring/three";
 
 export function Spaceboi(props) {
   const { nodes, materials } = useGLTF("/space_boi.glb");
@@ -14,6 +14,11 @@ export function Spaceboi(props) {
   const { rotation } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
     rotation: [0, 0, mousePos.x ? mousePos.x / window?.innerWidth : 0],
+  });
+
+  const { scale } = useSpring({
+    scale: active ? 60.324 : 30.324,
+    config: config.wobbly,
   });
 
   useLayoutEffect(() => {
@@ -189,9 +194,10 @@ export function Spaceboi(props) {
           material={materials["Material.001"]}
           position={[-341.988, 460.196, -117.028]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={62.402}
+          // scale={62.402}
+          scale={scale}
         />
-        <mesh
+        <animated.mesh
           castShadow
           receiveShadow
           geometry={nodes.Sphere006_Material002_0.geometry}
@@ -199,6 +205,17 @@ export function Spaceboi(props) {
           position={[-341.988, 460.196, -117.028]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={60.324}
+          // onClick={() => setActive(!active)}
+        />
+        <animated.mesh
+          castShadow
+          receiveShadow
+          geometry={nodes.Sphere007_Material002_0.geometry}
+          material={materials["Material.002"]}
+          position={[291.988, 260.196, -117.028]}
+          rotation={[-Math.PI / 2, 0, 0]}
+          onClick={() => setActive(!active)}
+          scale={scale}
         />
         {/* White Planet */}
         <mesh
