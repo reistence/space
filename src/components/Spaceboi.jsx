@@ -203,7 +203,6 @@ export function Spaceboi(props) {
           geometry={nodes.Sphere006_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[-341.988, 460.196, -117.028]}
-          rotation={[-Math.PI / 2, 0, 0]}
           scale={60.324}
           // onClick={() => setActive(!active)}
         />

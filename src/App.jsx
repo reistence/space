@@ -93,7 +93,7 @@ function App() {
     <div
       className="main-container"
       onMouseMove={changePosition}
-      // onMouseLeave={hideCursor}
+      onMouseLeave={hideCursor}
       onMouseEnter={showCursor}
       onMouseDown={startAnimation}
       onMouseUp={stopAnimation}
