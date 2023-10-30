@@ -1,14 +1,27 @@
 import React, { useEffect, useState } from "react";
 import styles from "./header.module.scss";
 import shuffleLetters from "shuffle-letters";
+import { useScroll } from "@react-three/drei";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function Header({ sheet }) {
-  console.log(sheet);
+  console.log(sheet.sequence.position);
+  // const scroll = useScroll();
+  // console.log(scroll);
+
+  // const scrollToPage = (targetPage) => {
+  //   const targetPosition = (targetPage - 1) / 20;
+  //   scroll.offset = targetPosition;
+  // };
+
   const initialValue = "reistence";
   const [text, setText] = useState(initialValue);
 
   let interval = null;
+
+  const click = () => {
+    sheet.sequence.position + 1;
+  };
 
   const handleMouseOver = () => {
     let iteration = 0;
