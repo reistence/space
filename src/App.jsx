@@ -84,23 +84,20 @@ function App() {
 
   console.log(currentPageValue);
 
-  const startAnimation = () => {
-    cursor.current.classList.add("start");
-  };
+  // const startAnimation = () => {
+  //   cursor.current.classList.add("start");
+  // };
 
-  const stopAnimation = () => {
-    cursor.current.classList.remove("start");
-  };
-
-  const container = useRef();
+  // const stopAnimation = () => {
+  //   cursor.current.classList.remove("start");
+  // };
 
   return (
     <div
       className="main-container"
-      ref={container}
-      // onMouseMove={changePosition}
-      // onMouseLeave={hideCursor}
-      // onMouseEnter={showCursor}
+      onMouseMove={changePosition}
+      onMouseLeave={hideCursor}
+      onMouseEnter={showCursor}
     >
       {/* <Header sheet={sheet} /> */}
 
@@ -120,7 +117,7 @@ function App() {
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
-      {/* <div className="cursor-style" ref={cursor}></div> */}
+      <div className="cursor-style" ref={cursor}></div>
     </div>
   );
 }

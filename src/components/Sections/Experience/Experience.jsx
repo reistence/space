@@ -52,7 +52,7 @@ const Experience = ({ currentPageValue }) => {
     // }
   }, [currentPageValue]);
 
-  if (currentPageValue === 8) {
+  if (currentPageValue === 12) {
     return (
       <>
         <div className={styles.tooling}>

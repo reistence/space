@@ -61,7 +61,7 @@ const About = ({ currentPageValue }) => {
     // };
   }, [currentPageValue]);
 
-  if (currentPageValue === 4) {
+  if (currentPageValue === 7) {
     return (
       <div className={styles.about}>
         <div>

@@ -7,7 +7,7 @@ function Direction({ currentPageValue }) {
     return (
       <div className={styles.slide}>
         <img src={chev} alt="" />
-        <span>Scroll down</span>
+        <span>Scroll to unravel</span>
       </div>
     );
   }
