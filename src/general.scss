@@ -26,12 +26,9 @@ body,
   height: 100%;
   overflow: hidden;
   background-color: black;
+  // cursor: none;
 }
 
 ul {
   list-style: none;
-}
-
-a:hover {
-  cursor: none;
 }

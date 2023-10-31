@@ -18,6 +18,7 @@ import Direction from "./components/Direction/Direction";
 import About from "./components/Sections/About/About";
 import Tooling from "./components/Sections/Tooling/Tooling";
 import Experience from "./components/Sections/Experience/Experience";
+import Cursor from "./components/Cursor/Cursor";
 
 function App() {
   const cursor = useRef(null);
@@ -91,87 +92,15 @@ function App() {
     cursor.current.classList.remove("start");
   };
 
-  // cursor
-  const circlesRef = useRef([]);
-  const [coords, setCoords] = useState({ x: 0, y: 0 });
-
-  const changePos = (e, ref) => {
-    ref.current.style.top = `${e.clientY}px`;
-    ref.current.style.left = `${e.clientX}px`;
-  };
-
-  useLayoutEffect(() => {
-    const circles = circlesRef.current;
-
-    // console.log(circles[0].x);
-    circles.forEach(function (circle, index) {
-      if (circle) {
-        circle.x = 0;
-        circle.y = 0;
-      }
-      // console.log(circle?.x);
-    });
-
-    window.addEventListener("mousemove", function (e) {
-      coords.x = e.clientX;
-      coords.y = e.clientY;
-    });
-
-    document.addEventListener("mouseleave", function () {
-      for (let index = 0; index < circles.length; index++) {
-        const singleCircle = circles[index];
-        if (singleCircle) {
-          singleCircle.style.visibility = "hidden";
-        }
-      }
-    });
-
-    document.addEventListener("mouseenter", function () {
-      for (let index = 0; index < circles.length; index++) {
-        const singleCircle = circles[index];
-        if (singleCircle) {
-          singleCircle.style.visibility = "visible";
-        }
-      }
-    });
-
-    function animateCircles() {
-      let x = coords.x;
-      let y = coords.y;
-
-      circles?.forEach(function (circle, index) {
-        if (circle) {
-          circle.style.left = x - 12 + "px";
-          circle.style.top = y - 12 + "px";
-
-          circle.style.scale = (circles.length - index) / circles.length;
-
-          circle.x = x;
-          circle.y = y;
-
-          const nextCircle = circles[index + 1] || circles[0];
-
-          x += (nextCircle.x - x) * 0.3;
-          y += (nextCircle.y - y) * 0.3;
-        }
-      });
-
-      requestAnimationFrame(animateCircles);
-    }
-
-    animateCircles();
-  }, []);
-
-  const circleArr = Array.from({ length: 250 });
+  const container = useRef();
 
   return (
     <div
       className="main-container"
-      onMouseMove={changePosition}
-      onMouseLeave={hideCursor}
-      onMouseEnter={showCursor}
-      // onMouseDown={startAnimation}
-      // onMouseUp={stopAnimation}
+      ref={container}
+      // onMouseMove={changePosition}
+      // onMouseLeave={hideCursor}
+      // onMouseEnter={showCursor}
     >
       {/* <Header sheet={sheet} /> */}
 
@@ -191,15 +120,7 @@ function App() {
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
-      <div className="cursor-style" ref={cursor}></div>
-      {/* <div className="cursor-style" ref={cursor1}></div> */}
-      {circleArr.map((c, index) => (
-        <div
-          key={index}
-          className="circle"
-          ref={(el) => circlesRef.current.push(el)}
-        ></div>
-      ))}
+      {/* <div className="cursor-style" ref={cursor}></div> */}
     </div>
   );
 }

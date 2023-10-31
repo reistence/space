@@ -1,3 +1,4 @@
+$circleSize: 5em;
 #root {
   width: 100vw;
   height: 100vh;
@@ -7,7 +8,7 @@
     width: 100%;
     height: 100%;
 
-    cursor: none;
+    // cursor: none;
 
     .cursor-style {
       // background-image: url(./assets/icons/spaceship.png);
@@ -43,17 +44,24 @@
       }
     }
 
-    .circle {
-      height: 20px;
-      width: 20px;
-      border-radius: 50%;
-      background-color: rgb(244, 240, 240);
-      position: absolute;
+    // .circle {
+    //   width: calc(var(--scale) * #{$circleSize});
+    //   height: calc(var(--scale) * #{$circleSize});
 
-      top: 0;
-      left: 0;
-      display: block;
-    }
+    //   border-radius: 50%;
+    //   // background-color: rgb(244, 240, 240);
+    //   position: fixed;
+    //   pointer-events: none;
+    //   background-image: url("./assets/icons/circle.png");
+    //   background-size: contain;
+    //   background-repeat: no-repeat;
+    //   background-position: center center;
+    //   top: 0;
+    //   left: 0;
+    //   z-index: 999999;
+
+    //   display: block;
+    // }
   }
 
   a:hover {
