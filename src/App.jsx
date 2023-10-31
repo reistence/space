@@ -31,7 +31,7 @@ function App() {
   };
   const audio = useRef(new Audio("/sounds/MysticSoundscapes3.mp3"));
   const [audioReady, setAudioReady] = useState(false);
-  const [isMuted, setIsMuted] = useState(false);
+  const [isMuted, setIsMuted] = useState(true);
   const playbackPosition = useRef(0);
 
   const handleSoundToggle = () => {
@@ -111,7 +111,11 @@ function App() {
     >
       {/* <Header sheet={sheet} /> */}
 
-      <AudioBtn handleSoundToggle={handleSoundToggle} isMuted={isMuted} />
+      <AudioBtn
+        handleSoundToggle={handleSoundToggle}
+        isMuted={isMuted}
+        currentPageValue={currentPageValue}
+      />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
         <ScrollControls pages={20} damping={1} maxSpeed={0.3}>
           <SheetProvider sheet={sheet}>
