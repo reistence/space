@@ -11,7 +11,7 @@ import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
 
 import fly from "./fly.json";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
 import Direction from "./components/Direction/Direction";
@@ -21,6 +21,7 @@ import Experience from "./components/Sections/Experience/Experience";
 
 function App() {
   const cursor = useRef(null);
+
   const changePosition = (e) => {
     cursor.current.style.top = `${e.clientY}px`;
     cursor.current.style.left = `${e.clientX}px`;
@@ -91,6 +92,77 @@ function App() {
   };
 
   // cursor
+  const circlesRef = useRef([]);
+  const [coords, setCoords] = useState({ x: 0, y: 0 });
+
+  const changePos = (e, ref) => {
+    ref.current.style.top = `${e.clientY}px`;
+    ref.current.style.left = `${e.clientX}px`;
+  };
+
+  useLayoutEffect(() => {
+    const circles = circlesRef.current;
+
+    // console.log(circles[0].x);
+    circles.forEach(function (circle, index) {
+      if (circle) {
+        circle.x = 0;
+        circle.y = 0;
+      }
+      // console.log(circle?.x);
+    });
+
+    window.addEventListener("mousemove", function (e) {
+      coords.x = e.clientX;
+      coords.y = e.clientY;
+    });
+
+    document.addEventListener("mouseleave", function () {
+      for (let index = 0; index < circles.length; index++) {
+        const singleCircle = circles[index];
+        if (singleCircle) {
+          singleCircle.style.visibility = "hidden";
+        }
+      }
+    });
+
+    document.addEventListener("mouseenter", function () {
+      for (let index = 0; index < circles.length; index++) {
+        const singleCircle = circles[index];
+        if (singleCircle) {
+          singleCircle.style.visibility = "visible";
+        }
+      }
+    });
+
+    function animateCircles() {
+      let x = coords.x;
+      let y = coords.y;
+
+      circles?.forEach(function (circle, index) {
+        if (circle) {
+          circle.style.left = x - 12 + "px";
+          circle.style.top = y - 12 + "px";
+
+          circle.style.scale = (circles.length - index) / circles.length;
+
+          circle.x = x;
+          circle.y = y;
+
+          const nextCircle = circles[index + 1] || circles[0];
+
+          x += (nextCircle.x - x) * 0.3;
+          y += (nextCircle.y - y) * 0.3;
+        }
+      });
+
+      requestAnimationFrame(animateCircles);
+    }
+
+    animateCircles();
+  }, []);
+
+  const circleArr = Array.from({ length: 250 });
 
   return (
     <div
@@ -98,8 +170,8 @@ function App() {
       onMouseMove={changePosition}
       onMouseLeave={hideCursor}
       onMouseEnter={showCursor}
-      onMouseDown={startAnimation}
-      onMouseUp={stopAnimation}
+      // onMouseDown={startAnimation}
+      // onMouseUp={stopAnimation}
     >
       {/* <Header sheet={sheet} /> */}
 
@@ -120,8 +192,14 @@ function App() {
       <Experience currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
-      {/* <div className="circle" ref={(el) => circles.current.push(el)}></div>
-      <div className="circle " ref={(el) => circles.current.push(el)}></div> */}
+      {/* <div className="cursor-style" ref={cursor1}></div> */}
+      {circleArr.map((c, index) => (
+        <div
+          key={index}
+          className="circle"
+          ref={(el) => circlesRef.current.push(el)}
+        ></div>
+      ))}
     </div>
   );
 }
