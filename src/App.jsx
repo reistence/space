@@ -31,7 +31,7 @@ function App() {
   };
   const audio = useRef(new Audio("/sounds/MysticSoundscapes3.mp3"));
   const [audioReady, setAudioReady] = useState(false);
-  const [isMuted, setIsMuted] = useState(true);
+  const [isMuted, setIsMuted] = useState(false);
   const playbackPosition = useRef(0);
 
   const handleSoundToggle = () => {
