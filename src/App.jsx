@@ -76,8 +76,16 @@ function App() {
 
   const [currentPageValue, setCurrentPageValue] = useState(0);
 
-  const showCursor = () => (cursor.current.style.display = "block");
-  const hideCursor = () => (cursor.current.style.display = "none");
+  const showCursor = () => {
+    if (cursor.current) {
+      cursor.current.style.display = "block";
+    }
+  };
+  const hideCursor = () => {
+    if (cursor.current) {
+      cursor.current.style.display = "none";
+    }
+  };
 
   const sheet = useMemo(
     () => getProject("Fly Through", { state: fly }).sheet("Scene"),
