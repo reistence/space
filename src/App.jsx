@@ -19,6 +19,8 @@ import About from "./components/Sections/About/About";
 import Tooling from "./components/Sections/Tooling/Tooling";
 import Experience from "./components/Sections/Experience/Experience";
 import Cursor from "./components/Cursor/Cursor";
+import Contacts from "./components/Sections/Contacts/Contacts";
+import Credits from "./components/Sections/Credits/Credits";
 
 function App() {
   const cursor = useRef(null);
@@ -116,7 +118,9 @@ function App() {
 
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
+      <Contacts currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
+      <Credits currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
     </div>
   );
