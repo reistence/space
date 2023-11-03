@@ -60,6 +60,7 @@ const Experience = ({ currentPageValue }) => {
             <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
               {text}
             </h3>
+            <p>...not much but still</p>
           </div>
           <div className={styles.wrapper}>
             <div className={styles.block}>
