@@ -79,12 +79,15 @@ const Credits = ({ currentPageValue }) => {
                 Chainsaw man
               </a>
             </div>
-            {/* <div>
+            <div>
               <p>Sound</p>
-              <a className={styles.icon} href="https://github.com/reistence">
+              <a
+                className={styles.icon}
+                href="https://motionarray.com/royalty-free-music/mystic-soundscapes-1072130/"
+              >
                 Mystic Space Sound
               </a>
-            </div> */}
+            </div>
           </div>
         </div>
       </>
