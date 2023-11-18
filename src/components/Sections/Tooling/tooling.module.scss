@@ -13,6 +13,8 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
+  // pointer-events: none;
+
   height: auto;
   min-height: 500px;
   // border: 1px solid yellow;
@@ -48,19 +50,19 @@
       align-self: flex-end;
       position: absolute;
       top: -50px;
-      left: 0;
+      left: 60px;
     }
   }
 }
 
-.orbit {
-  // background: #00020b;
-  // float: left;
+// .orbit {
+//   // background: #00020b;
+//   // float: left;
 
-  // width: 10%;
-  // min-width: 10%;
-  // min-height: 10%;
-}
+//   // width: 10%;
+//   // min-width: 10%;
+//   // min-height: 10%;
+// }
 
 .orbitIcon {
   width: 1.6em;

@@ -65,25 +65,48 @@ const Experience = ({ currentPageValue }) => {
             <div className={styles.block}>
               <div className={styles.date}>
                 <span>2023</span> - present
-              </div>
-
-              <div className={styles.text}>
-                <div className={styles.role}>Jr. Full Stack Developer</div>
-
-                <p>
-                  Develop and maintain front-end and back-end web and mobile
-                  apps. In this role, my commitment lies in actively
-                  collaborating with the development team to ensure the
-                  effective implementation of solutions and innovative features,
-                  ensuring an optimal user experience.
-                </p>
-
                 <div className={styles.at}>
                   <span>At: </span>
                   <a href="https://www.azero.it/" className={styles.companyPic}>
                     <img src={azero} alt="" />
                   </a>
                 </div>
+              </div>
+
+              <div className={styles.text}>
+                <div className={styles.role}>Jr. Full Stack Developer</div>
+                <ul>
+                  <li>
+                    {" "}
+                    Front-end and back-end development and optimization of web
+                    app
+                  </li>
+                  <li>Front-end development and design of mobile apps</li>
+                  <li>
+                    Analysis and identification fo customer needs to obtain an
+                    overall view of projects and identify the most suitable
+                    platforms and structures.
+                  </li>
+                  <li>
+                    Definition of architecture, graphical interface, and
+                    navigation models.
+                  </li>
+                </ul>
+
+                {/* <p>
+                  Develop and maintain front-end and back-end web and mobile
+                  apps. In this role, my commitment lies in actively
+                  collaborating with the development team to ensure the
+                  effective implementation of solutions and innovative features,
+                  ensuring an optimal user experience.
+                </p> */}
+
+                {/* <div className={styles.at}>
+                  <span>At: </span>
+                  <a href="https://www.azero.it/" className={styles.companyPic}>
+                    <img src={azero} alt="" />
+                  </a>
+                </div> */}
               </div>
             </div>
           </div>
