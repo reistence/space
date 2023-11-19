@@ -92,7 +92,7 @@ function App() {
     []
   );
 
-  console.log(currentPageValue);
+  // console.log(currentPageValue);
 
   // const startAnimation = () => {
   //   cursor.current.classList.add("start");
@@ -161,7 +161,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     sheet.sequence.position = scroll.offset * sequenceLength;
   });
 
-  console.log(currentPageValue);
+  // console.log(currentPageValue);
 
   return (
     <>

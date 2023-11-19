@@ -66,7 +66,7 @@ export function Spaceboi(props) {
             rotation={rotation}
             onClick={(e) => {
               e.stopPropagation();
-              console.log("click");
+              // console.log("click");
               setActive(!active);
             }}
           />

@@ -5,7 +5,7 @@ import { useScroll } from "@react-three/drei";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 function Header({ sheet }) {
-  console.log(sheet.sequence.position);
+  // console.log(sheet.sequence.position);
   // const scroll = useScroll();
   // console.log(scroll);
 
