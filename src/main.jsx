@@ -17,7 +17,8 @@ ReactDOM.createRoot(document.getElementById("root")).render(
       <App />
     </Suspense>
     <Wave />
+    <Cursor />
   </React.StrictMode>
 );
 
-ReactDOM.createRoot(document.getElementById("cursor-root")).render(<Cursor />);
+// ReactDOM.createRoot(document.getElementById("cursor-root")).render(<Cursor />);

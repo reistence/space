@@ -1,9 +1,15 @@
 import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
+
+import { createPortal } from "react-dom";
+
 import styles from "./cursor.module.scss";
 // import circ from "../../assets/icons/circle.png";
 const Cursor = ({ currentPageValue }) => {
-  const circleArr = Array.from({ length: 50 });
+  const circleArr = Array.from({ length: 100 });
   // cursor
+  const myRef = useRef(null);
+  const [mounted, setMounted] = useState(false);
+
   const circlesRef = useRef([]);
   const [coords, setCoords] = useState({ x: 0, y: 0 });
 
@@ -76,21 +82,27 @@ const Cursor = ({ currentPageValue }) => {
       document.removeEventListener("mouseleave", onMouseLeave);
       document.removeEventListener("mouseenter", onMouseEnter);
     };
+  }, [mounted]);
+
+  useEffect(() => {
+    myRef.current = document.querySelector("#cursor-root");
+    setMounted(true);
   }, []);
 
-  return (
-    <>
-      {circleArr.map((c, index) => (
-        <div
-          key={index}
-          className={styles.circle}
-          ref={(el) => circlesRef.current.push(el)}
-        >
-          {/* <img src={circ}></img> */}
-        </div>
-      ))}
-    </>
-  );
+  return mounted && myRef.current
+    ? createPortal(
+        <>
+          {circleArr.map((c, index) => (
+            <div
+              key={index}
+              className={styles.circle}
+              ref={(el) => circlesRef.current.push(el)}
+            ></div>
+          ))}
+        </>,
+        myRef.current
+      )
+    : null;
 };
 
 export default Cursor;
