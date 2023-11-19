@@ -83,7 +83,7 @@ const Experience = ({ currentPageValue }) => {
                   </li>
                   <li>Front-end development and design of mobile apps</li>
                   <li>
-                    Analysis and identification fo customer needs to obtain an
+                    Analysis and identification of customer needs to obtain an
                     overall view of projects and identify the most suitable
                     platforms and structures.
                   </li>
