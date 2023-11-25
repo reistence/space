@@ -21,6 +21,7 @@ import Experience from "./components/Sections/Experience/Experience";
 import Cursor from "./components/Cursor/Cursor";
 import Contacts from "./components/Sections/Contacts/Contacts";
 import Credits from "./components/Sections/Credits/Credits";
+import WorkInProgress from "./components/Sections/working/WorkInProgress";
 
 function App() {
   const cursor = useRef(null);
@@ -126,6 +127,7 @@ function App() {
           </SheetProvider>
         </ScrollControls>
       </Canvas>
+      <WorkInProgress currentPageValue={currentPageValue} />
       <About currentPageValue={currentPageValue} />
 
       <Tooling currentPageValue={currentPageValue} />
@@ -158,7 +160,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     if (scroll) {
       logCurrentPageCallback(scroll, setCurrentPageValue);
     }
-    sheet.sequence.position = scroll.offset * sequenceLength;
+    sheet.sequence.position = Math.max(scroll.offset * sequenceLength);
   });
 
   // console.log(currentPageValue);
