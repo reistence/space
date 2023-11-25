@@ -10,7 +10,17 @@ export function Spaceboi(props) {
   const [mousePos, setMousePos] = useState({});
   const spaceRef = useRef();
   const particlesRef = useRef();
+  const blackPlanetRef = useRef();
+  const blackPlanetRef2 = useRef();
+  const whiteStripePlanet = useRef();
+  const whiteStripeRing = useRef();
+
   const [active, setActive] = useState(false);
+  const [active2, setActive2] = useState(true);
+  const [active3, setActive3] = useState(false);
+  const [active4, setActive4] = useState(true);
+  const [active5, setActive5] = useState(true);
+  const [active6, setActive6] = useState(true);
   const { rotation } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
     rotation: [0, 0, mousePos.x ? mousePos.x / window?.innerWidth : 0],
@@ -18,6 +28,19 @@ export function Spaceboi(props) {
 
   const { scale } = useSpring({
     scale: active ? 60.324 : 30.324,
+    config: config.wobbly,
+  });
+
+  const { scale: scale2 } = useSpring({
+    scale: active2 ? 60.324 : 30.324,
+    config: config.wobbly,
+  });
+  const { scale: scale3 } = useSpring({
+    scale: active3 ? 60.324 : 30.324,
+    config: config.wobbly,
+  });
+  const { scale: scale4 } = useSpring({
+    scale: active4 ? 16.881 : 30.324,
     config: config.wobbly,
   });
 
@@ -48,6 +71,10 @@ export function Spaceboi(props) {
   useFrame(() => {
     // particlesRef.current.rotation.z += 0.0001;
     particlesRef.current.rotation.z += 0.0001;
+    blackPlanetRef.current.rotation.z += 0.009;
+    blackPlanetRef2.current.rotation.z += 0.009;
+    whiteStripePlanet.current.rotation.z += 0.005;
+    whiteStripeRing.current.rotation.z += 0.002;
   });
   return (
     <group {...props} dispose={null} ref={spaceRef}>
@@ -67,7 +94,7 @@ export function Spaceboi(props) {
             onClick={(e) => {
               e.stopPropagation();
               // console.log("click");
-              setActive(!active);
+              // setActive(!active);
             }}
           />
           <animated.mesh
@@ -162,9 +189,10 @@ export function Spaceboi(props) {
         <mesh
           castShadow
           receiveShadow
+          ref={whiteStripePlanet}
           geometry={nodes.Sphere_Material001_0.geometry}
           material={materials["Material.001"]}
-          position={[375.469, 427.948, 0]}
+          position={[375.469, 427.948, 3]}
           rotation={[-Math.PI / 2, 0, 0]}
           scale={62.402}
         />
@@ -180,6 +208,7 @@ export function Spaceboi(props) {
         <mesh
           castShadow
           receiveShadow
+          ref={whiteStripeRing}
           geometry={nodes.Sphere004_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[375.469, 427.948, 0]}
@@ -203,8 +232,9 @@ export function Spaceboi(props) {
           geometry={nodes.Sphere006_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[-341.988, 460.196, -117.028]}
-          scale={60.324}
-          // onClick={() => setActive(!active)}
+          // scale={60.324}
+          scale={scale2}
+          onClick={() => setActive2(!active2)}
         />
         <animated.mesh
           castShadow
@@ -217,23 +247,27 @@ export function Spaceboi(props) {
           scale={scale}
         />
         {/* White Planet */}
-        <mesh
+        <animated.mesh
           castShadow
           receiveShadow
           geometry={nodes.Sphere009_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[507.522, 667.594, -214.475]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={16.881}
+          // scale={16.881}
+          onClick={() => setActive3(!active3)}
+          scale={scale3}
         />
-        <mesh
+        <animated.mesh
           castShadow
           receiveShadow
           geometry={nodes.Sphere010_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[-287.442, 585.792, -311.857]}
           rotation={[-Math.PI / 2, 0, 0]}
-          scale={16.881}
+          // scale={16.881}
+          onClick={() => setActive4(!active4)}
+          scale={scale4}
         />
         <mesh
           castShadow
@@ -256,6 +290,7 @@ export function Spaceboi(props) {
         <mesh
           castShadow
           receiveShadow
+          ref={blackPlanetRef2}
           geometry={nodes.Sphere003_Material002_0.geometry}
           material={materials["Material.002"]}
           position={[-357.404, 392.646, 0]}
@@ -264,6 +299,7 @@ export function Spaceboi(props) {
         />
         <mesh
           castShadow
+          ref={blackPlanetRef}
           receiveShadow
           geometry={nodes.Sphere008_Material002_0.geometry}
           material={materials["Material.002"]}
