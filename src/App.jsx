@@ -22,6 +22,9 @@ import Cursor from "./components/Cursor/Cursor";
 import Contacts from "./components/Sections/Contacts/Contacts";
 import Credits from "./components/Sections/Credits/Credits";
 import WorkInProgress from "./components/Sections/working/WorkInProgress";
+import { Ufo } from "./components/Ufo";
+import { AmbientLight } from "three";
+import { Ufo2 } from "./components/Ufo2";
 
 function App() {
   const cursor = useRef(null);
@@ -163,7 +166,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     sheet.sequence.position = Math.max(scroll.offset * sequenceLength);
   });
 
-  // console.log(currentPageValue);
+  console.log(scroll);
 
   return (
     <>
@@ -179,6 +182,9 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       {/* <OrbitControls /> */}
       <Spaceboi />
       <ChanisawAstro />
+
+      <Ufo />
+      <Ufo2 />
     </>
   );
 }
