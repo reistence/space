@@ -17,13 +17,15 @@ export function Ufo2(props) {
   const [mousePos, setMousePos] = useState({ x: 0, y: 10 });
   const { camera, size, raycaster, pointer } = useThree();
 
+  // console.log(props.currentPageValue);
+
   const { position } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
     position: [
-      Math.round(pointer.x * 10),
+      props.currentPageValue > 10 ? 3 : Math.round(pointer.x * 10),
       Math.max(Math.round(pointer.y * 10), -0.7),
       // Math.round(camera.position.z),
-      -5,
+      props.currentPageValue < 10 ? 3 : Math.round(pointer.x * 10),
     ],
   });
 
@@ -44,7 +46,7 @@ export function Ufo2(props) {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  console.log(pointer.y * 10);
+  // console.log(pointer.y * 10);
 
   return (
     <>

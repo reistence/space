@@ -166,7 +166,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     sheet.sequence.position = Math.max(scroll.offset * sequenceLength);
   });
 
-  console.log(scroll);
+  // console.log(scroll);
 
   return (
     <>
@@ -184,7 +184,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       <ChanisawAstro />
 
       <Ufo />
-      <Ufo2 />
+      <Ufo2 currentPageValue={currentPageValue} />
     </>
   );
 }
