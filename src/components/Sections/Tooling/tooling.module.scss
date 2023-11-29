@@ -13,7 +13,7 @@
   left: 50%;
   transform: translate(-50%, -50%);
   width: 60%;
-  // pointer-events: none;
+  pointer-events: none;
 
   height: auto;
   min-height: 500px;
@@ -603,6 +603,7 @@ ul[className^="ring"] li {
 .orbitCenterIcon {
   transform: rotateZ(-360deg);
   transition: all 300ms ease-in-out;
+  pointer-events: all;
   color: #000000;
 }
 

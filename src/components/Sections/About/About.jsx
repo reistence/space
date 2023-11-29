@@ -72,9 +72,9 @@ const About = ({ currentPageValue }) => {
           <div className={styles.pic}>{/* <img src={pic} /> */}</div>
         </div>
         <p ref={pRef}>
-          My name is Valerio and I'm a Full Stack Web Developer. I deeply love
-          the fusion of artistry and functionality even tough this one is
-          neither of them.
+          My name is Valerio and I'm a full stack web developer. I deeply love
+          the fusion of artistry and functionality even tough this one leans
+          only towards the first end.
           {/* I have an unwavering
           enthusiasm for crafting digital experiences that are not only visually
           captivating but also incredibly practical. */}

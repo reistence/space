@@ -17,7 +17,7 @@ import js from "../../../assets/icons/js.png";
 import astro from "../../../assets/icons/astro.png";
 
 const Tooling = ({ currentPageValue }) => {
-  const initialValue = "Tooling";
+  const initialValue = "Stuff I've fun with";
   const [text, setText] = useState(initialValue);
   const titleRef = useRef();
 

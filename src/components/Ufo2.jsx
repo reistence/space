@@ -22,10 +22,10 @@ export function Ufo2(props) {
   const { position } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
     position: [
-      props.currentPageValue > 10 ? 3 : Math.round(pointer.x * 10),
+      props.currentPageValue > 9 ? 3 : Math.round(pointer.x * 10),
       Math.max(Math.round(pointer.y * 10), -0.7),
       // Math.round(camera.position.z),
-      props.currentPageValue < 10 ? 3 : Math.round(pointer.x * 10),
+      props.currentPageValue < 9 ? 3 : Math.round(-pointer.x * 10),
     ],
   });
 
