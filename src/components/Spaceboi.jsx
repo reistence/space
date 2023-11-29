@@ -1,7 +1,7 @@
 /* eslint-disable react/no-unknown-property */
 
 import React, { useLayoutEffect, useRef, useState } from "react";
-import { useGLTF } from "@react-three/drei";
+import { Html, useGLTF } from "@react-three/drei";
 import { useFrame } from "@react-three/fiber";
 import { useSpring, animated, config } from "@react-spring/three";
 
@@ -235,7 +235,7 @@ export function Spaceboi(props) {
           // scale={60.324}
           scale={scale2}
           onClick={() => setActive2(!active2)}
-        />
+        ></animated.mesh>
         <animated.mesh
           castShadow
           receiveShadow
@@ -257,7 +257,13 @@ export function Spaceboi(props) {
           // scale={16.881}
           onClick={() => setActive3(!active3)}
           scale={scale3}
-        />
+        >
+          {/* {props.currentPageValue === 4 && (
+          )} */}
+          <Html center={true} occlude={"raycast"}>
+            <span>ugidysfghfiud</span>
+          </Html>
+        </animated.mesh>
         <animated.mesh
           castShadow
           receiveShadow

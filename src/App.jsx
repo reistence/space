@@ -96,7 +96,7 @@ function App() {
     []
   );
 
-  // console.log(currentPageValue);
+  console.log(currentPageValue);
 
   // const startAnimation = () => {
   //   cursor.current.classList.add("start");
@@ -157,17 +157,27 @@ function logCurrentPageCallback(scroll, callback) {
 function Scene({ currentPageValue, setCurrentPageValue }) {
   const sheet = useCurrentSheet();
   const scroll = useScroll();
+  let o = true;
 
   useFrame(() => {
     const sequenceLength = val(sheet.sequence.pointer.length);
     if (scroll) {
       logCurrentPageCallback(scroll, setCurrentPageValue);
     }
-    sheet.sequence.position = Math.max(scroll.offset * sequenceLength);
+    // console.log(o);
+
+    if (o) {
+      sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
+    }
   });
 
-  // console.log(scroll);
+  // console.log(sheet.sequence.position);
 
+  const s = async (targetPosition) => {
+    o = false;
+    sheet.sequence.position = 4.53584070521234;
+    console.log(o);
+  };
   return (
     <>
       {/* <color attach='background' args={['black']}/> */}
@@ -180,10 +190,10 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
         far={100}
       />
       {/* <OrbitControls /> */}
-      <Spaceboi />
+      <Spaceboi currentPageValue={currentPageValue} />
       <ChanisawAstro />
 
-      <Ufo />
+      <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
     </>
   );
