@@ -4,7 +4,7 @@ import { useGLTF } from "@react-three/drei";
 export function Unknown(props) {
   const { nodes, materials } = useGLTF("/unknown.glb");
   return (
-    <group {...props} dispose={null} scale={11}>
+    <group {...props} dispose={null} scale={7}>
       <group position={[0.108, 0.591, 0.07]} rotation={[0, 0, -3.012]}>
         <mesh
           castShadow

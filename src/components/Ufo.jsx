@@ -10,10 +10,16 @@ import React, { useMemo, useRef } from "react";
 import { SpotLight, useDepthBuffer, useGLTF } from "@react-three/drei";
 import { AmbientLight, PointLight } from "three";
 import { MovingSpot } from "./MovingSpot";
+import { useFrame } from "@react-three/fiber";
 
 export function Ufo(props) {
   const { nodes, materials } = useGLTF("/simple_ufo_with_lights.glb");
   const depthBuffer = useDepthBuffer({ frames: 1 });
+  const ufo = useRef();
+
+  useFrame((state) => {
+    ufo.current.position.y = 0.1 + Math.sin(state.clock.elapsedTime) * 0.049;
+  });
 
   return (
     <>
@@ -23,7 +29,13 @@ export function Ufo(props) {
         color="white"
         position={[0, 0.1, -6]}
       /> */}
-      <group {...props} scale={0.2} dispose={null} position={[0, 0.1, -6]}>
+      <group
+        {...props}
+        scale={0.2}
+        dispose={null}
+        position={[0, 0.1, -6]}
+        ref={ufo}
+      >
         <group rotation={[-Math.PI / 2, 0, 0]} scale={0.125}>
           <group rotation={[Math.PI / 2, 0, 0]} scale={0.1}>
             <group

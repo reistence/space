@@ -9,6 +9,7 @@ export function Spaceboi(props) {
   const { nodes, materials } = useGLTF("/space_boi.glb");
   const [mousePos, setMousePos] = useState({});
   const spaceRef = useRef();
+  const waves = useRef();
   const particlesRef = useRef();
   const blackPlanetRef = useRef();
   const blackPlanetRef2 = useRef();
@@ -55,18 +56,9 @@ export function Spaceboi(props) {
       window.removeEventListener("mousemove", handleMouseMove);
     };
   }, []);
-  // useFrame(({ mouse }) => {
-  //   if (spaceRef.current && active) {
-  //     const { x, y } = mouse;
-  //     // Calculate the rotation angles to make the model face the mouse
-  //     const dx = x * 2 - 1;
-  //     const dy = y * -2 + 1;
-  //     const angle = Math.atan2(dy, dx);
-
-  //     // Apply the rotation to the model
-  //     spaceRef.current.rotation.y = angle;
-  //   }
-  // });
+  useFrame(({ state }) => {
+    waves.current.rotation.z -= 0.001;
+  });
 
   useFrame(() => {
     // particlesRef.current.rotation.z += 0.0001;
@@ -84,7 +76,7 @@ export function Spaceboi(props) {
           scale={150}
           //   position={[0, 100, 0]}
         >
-          <animated.mesh
+          {/* <animated.mesh
             castShadow
             receiveShadow
             geometry={nodes.body_Material001_0.geometry}
@@ -96,14 +88,14 @@ export function Spaceboi(props) {
               // console.log("click");
               // setActive(!active);
             }}
-          />
-          <animated.mesh
+          /> */}
+          {/* <animated.mesh
             castShadow
             receiveShadow
             rotation={rotation}
             geometry={nodes.body_Material002_0.geometry}
             material={materials["Material.002"]}
-          />
+          /> */}
         </group>
         <group
           position={[-357.404, 392.646, 0]}
@@ -142,6 +134,7 @@ export function Spaceboi(props) {
           />
         </group>
         <mesh
+          ref={waves}
           castShadow
           receiveShadow
           geometry={nodes.waves_Material002_0.geometry}

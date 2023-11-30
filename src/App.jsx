@@ -36,6 +36,9 @@ import { Unknown } from "./components/Unknown";
 import { MovingSpot } from "./components/MovingSpot";
 import { Prova } from "./components/Prova";
 import { Helmet } from "./components/Helmet";
+import { Bait } from "./components/Bait";
+import { JellyFish } from "./components/JellyFish";
+import { Mindless } from "./components/Mindless";
 
 function App() {
   const cursor = useRef(null);
@@ -211,9 +214,12 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       <ChanisawAstro />
       <FlyingAstro />
       {/* <Unknown /> */}
+      {/* <Bait /> */}
+      <Mindless />
       <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
       {/* <Prova /> */}
+      <JellyFish />
       <Helmet />
     </>
   );

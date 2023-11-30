@@ -1,8 +1,10 @@
 import React, { useEffect, useRef } from "react";
 import { useGLTF, useAnimations } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 export function Helmet(props) {
   const group = useRef();
+  const helm = useRef();
   const { nodes, materials, animations } = useGLTF(
     "/low_poly_space_helmet_untextured.glb"
   );
@@ -12,10 +14,19 @@ export function Helmet(props) {
     // actions["Take 001"].play();
     // console.log(actions);
   }, []);
+
+  useFrame((state) => {
+    helm.current.rotation.x += 0.01;
+    helm.current.rotation.y += 0.01;
+    helm.current.rotation.z += 0.01;
+
+    helm.current.position.y = 6 + Math.sin(state.clock.elapsedTime) * 0.5;
+  });
   return (
     <group ref={group} {...props} dispose={null}>
       <group name="Sketchfab_Scene">
         <group
+          ref={helm}
           scale={0.3}
           name="Sketchfab_model"
           rotation={[-Math.PI * 0.45, 0, 0]}
