@@ -39,6 +39,7 @@ import { Helmet } from "./components/Helmet";
 import { Bait } from "./components/Bait";
 import { JellyFish } from "./components/JellyFish";
 import { Mindless } from "./components/Mindless";
+import { Tv } from "./components/Tv";
 
 function App() {
   const cursor = useRef(null);
@@ -209,13 +210,15 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
         color="white"
         position={[0, 0.1, -6]}
       /> */}
-      {/* <OrbitControls /> */}
+      <OrbitControls />
       <Spaceboi currentPageValue={currentPageValue} />
       <ChanisawAstro />
-      <FlyingAstro />
+      {/* <FlyingAstro /> */}
       {/* <Unknown /> */}
       {/* <Bait /> */}
-      <Mindless />
+      {/* <Mindless /> */}
+      <Tv />
+
       <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
       {/* <Prova /> */}

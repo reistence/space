@@ -70,7 +70,7 @@ export function Mindless(props) {
         geometry={nodes.Object_13.geometry}
         material={materials.black}
         position={[-5.762, -25.62, -0.877]}
-        rotation={[0.219, -0.135, 0.092]}
+        rotation={[0.219, 0, 0.092]}
       />
       <mesh
         castShadow
@@ -78,7 +78,7 @@ export function Mindless(props) {
         geometry={nodes.Object_15.geometry}
         material={materials.white}
         position={[-5.782, -25.33, -0.865]}
-        rotation={[0.219, -0.135, 0.092]}
+        rotation={[0.219, 0, 0.092]}
       />
     </group>
   );
