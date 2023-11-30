@@ -260,9 +260,9 @@ export function Spaceboi(props) {
         >
           {/* {props.currentPageValue === 4 && (
           )} */}
-          <Html center={true} occlude={"raycast"}>
+          {/* <Html center={true} occlude={"raycast"}>
             <span>ugidysfghfiud</span>
-          </Html>
+          </Html> */}
         </animated.mesh>
         <animated.mesh
           castShadow

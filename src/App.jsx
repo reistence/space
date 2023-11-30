@@ -35,6 +35,7 @@ import { FlyingAstro } from "./components/FlyingAstro";
 import { Unknown } from "./components/Unknown";
 import { MovingSpot } from "./components/MovingSpot";
 import { Prova } from "./components/Prova";
+import { Helmet } from "./components/Helmet";
 
 function App() {
   const cursor = useRef(null);
@@ -213,6 +214,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
       {/* <Prova /> */}
+      <Helmet />
     </>
   );
 }

@@ -34,15 +34,47 @@ export function Ufo2(props) {
   const viewport = useThree((state) => state.viewport);
 
   useFrame((state) => {
-    ufo.current.position.lerp(
-      vec.set(
-        (state.mouse.x * viewport.width) / 2,
-        Math.max((state.mouse.y * viewport.height) / 2, -0.7),
-        props.currentPageValue < 9 ? 3 : (state.mouse.x * viewport.width) / 2
-      ),
-      0.015
-    );
+    // console.log(state.camera.position);
 
+    if (props.currentPageValue < 9) {
+      ufo.current.position.lerp(
+        vec.set(
+          (state.mouse.x * viewport.width) / 2,
+          Math.max((state.mouse.y * viewport.height) / 2, -0.7),
+          4
+        ),
+        0.015
+      );
+    } else if (props.currentPageValue > 9 && props.currentPageValue <= 16) {
+      ufo.current.position.lerp(
+        vec.set(
+          3,
+          Math.max((state.mouse.y * viewport.height) / 2, -0.7),
+          (-state.mouse.x * viewport.width) / 2
+        ),
+        0.015
+      );
+    } else if (props.currentPageValue > 17) {
+      ufo.current.position.lerp(
+        vec.set(
+          Math.max(Math.round(pointer.x * 10), -1.5),
+          Math.max((state.mouse.y * viewport.height) / 2, -0.7),
+          Math.min((state.mouse.x * viewport.width) / 2, 0.5)
+        ),
+        0.015
+      );
+    }
+
+    // ufo.current.position.lerp(
+    //   vec.set(
+    //     props.currentPageValue > 9 ? 3 : (state.mouse.x * viewport.width) / 2,
+    //     Math.max((state.mouse.y * viewport.height) / 2, -0.7),
+    //     props.currentPageValue < 9 ? 4 : (-state.mouse.x * viewport.width) / 2
+    //   ),
+    //   0.015
+    // );
+
+    // console.log(ufo.current.position);
     // light.current.target.updateMatrixWorld();
   });
 
