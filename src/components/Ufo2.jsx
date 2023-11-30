@@ -10,7 +10,9 @@ import React, { useEffect, useLayoutEffect, useRef, useState } from "react";
 import { useGLTF } from "@react-three/drei";
 import { AmbientLight } from "three";
 import { useSpring, animated } from "@react-spring/three";
-import { useThree } from "@react-three/fiber";
+import { useFrame, useThree } from "@react-three/fiber";
+import { MovingSpot } from "./MovingSpot";
+import { Vector3 } from "three";
 
 export function Ufo2(props) {
   const { nodes, materials } = useGLTF("/simple_ufo_with_lights.glb");
@@ -18,34 +20,49 @@ export function Ufo2(props) {
   const { camera, size, raycaster, pointer } = useThree();
 
   // console.log(props.currentPageValue);
-
+  let vec = new Vector3();
   const { position } = useSpring({
     // rotation: active ? [0, 0, Math.PI / mousePos.y] : [0, 0, 0],
     position: [
-      props.currentPageValue > 9 ? 3 : Math.round(pointer.x * 10),
+      props.currentPageValue > 9 ? 3 : Math.round(pointer.x * 20),
       Math.max(Math.round(pointer.y * 10), -0.7),
       // Math.round(camera.position.z),
-      props.currentPageValue < 9 ? 3 : Math.round(-pointer.x * 10),
+      props.currentPageValue < 9 ? 3 : Math.round(-pointer.x * 20),
     ],
+  });
+  const ufo = useRef();
+  const viewport = useThree((state) => state.viewport);
+
+  useFrame((state) => {
+    ufo.current.position.lerp(
+      vec.set(
+        (state.mouse.x * viewport.width) / 2,
+        Math.max((state.mouse.y * viewport.height) / 2, -0.7),
+        props.currentPageValue < 9 ? 3 : (state.mouse.x * viewport.width) / 2
+      ),
+      0.015
+    );
+
+    // light.current.target.updateMatrixWorld();
   });
 
   // console.log(camera);
-  useLayoutEffect(() => {
-    const handleMouseMove = (event) => {
-      // setMousePos({ x: event.clientX, y: event.clientY });
-      setMousePos({
-        // mouseX: Math.round(pointer.x * 10) + 1,
-        // mouseX: 0,
-        // mouseY: 5,
-      });
-    };
+  // useLayoutEffect(() => {
+  //   const handleMouseMove = (event) => {
+  //     // setMousePos({ x: event.clientX, y: event.clientY });
+  //     setMousePos({
+  //       // mouseX: Math.round(pointer.x * 10) + 1,
+  //       // mouseX: 0,
+  //       // mouseY: 5,
+  //     });
+  //   };
 
-    window.addEventListener("mousemove", handleMouseMove);
+  //   window.addEventListener("mousemove", handleMouseMove);
 
-    return () => {
-      window.removeEventListener("mousemove", handleMouseMove);
-    };
-  }, []);
+  //   return () => {
+  //     window.removeEventListener("mousemove", handleMouseMove);
+  //   };
+  // }, []);
   // console.log(pointer.y * 10);
 
   return (
@@ -56,10 +73,12 @@ export function Ufo2(props) {
         scale={1}
         dispose={null}
         // position={[0, 3, 6]}
-        position={position}
+        // position={position}
+        ref={ufo}
         // onPointerEnter={handleMouseMove}
         // rotation={rotation}
       >
+        {/* <MovingSpot color="#f32828" position={(0, 10, 0)} /> */}
         <group rotation={[-Math.PI / 2, 0, 0]} scale={0.125}>
           <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
             <group

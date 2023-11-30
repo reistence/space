@@ -8,7 +8,7 @@ export function FlyingAstro(props) {
     <>
       {/* <OrbitControls /> */}
       {/* <PivotControls> */}
-      <group {...props} dispose={null} position={[7, 4, 1]} scale={0.5}>
+      <group {...props} dispose={null} position={[1, 4, 10]} scale={0.5}>
         <mesh
           castShadow
           receiveShadow

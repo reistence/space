@@ -12,7 +12,7 @@ export function ChanisawAstro(props) {
     <>
       <MovingSpot
         // depthBuffer={depthBuffer}
-        color="#f32828"
+        color="white"
         position={[0, 2.7, -6]}
       />
       <group

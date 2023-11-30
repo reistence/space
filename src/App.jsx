@@ -3,6 +3,7 @@ import "./App.scss";
 import {
   OrbitControls,
   ScrollControls,
+  Sky,
   useDepthBuffer,
   useScroll,
 } from "@react-three/drei";
@@ -33,6 +34,7 @@ import { Ufo2 } from "./components/Ufo2";
 import { FlyingAstro } from "./components/FlyingAstro";
 import { Unknown } from "./components/Unknown";
 import { MovingSpot } from "./components/MovingSpot";
+import { Prova } from "./components/Prova";
 
 function App() {
   const cursor = useRef(null);
@@ -138,7 +140,7 @@ function App() {
           </SheetProvider>
         </ScrollControls>
       </Canvas>
-      <WorkInProgress currentPageValue={currentPageValue} />
+      {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
       <About currentPageValue={currentPageValue} />
 
       <Tooling currentPageValue={currentPageValue} />
@@ -193,7 +195,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       <PerspectiveCamera
         theatreKey="Camera"
         makeDefault
-        position={[0, 4, 15]}
+        position={[0, 4, 10]}
         fov={100}
         near={0.5}
         far={100}
@@ -210,6 +212,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       {/* <Unknown /> */}
       <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
+      {/* <Prova /> */}
     </>
   );
 }

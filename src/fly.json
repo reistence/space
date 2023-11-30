@@ -34,12 +34,7 @@
                     "id": "dS4KdCb6qh",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -47,12 +42,7 @@
                     "id": "eJDU4aGhAs",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -60,12 +50,7 @@
                     "id": "0-T_FH94kd",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 5.449999999999978
                   },
@@ -73,12 +58,7 @@
                     "id": "Az_i35NFXG",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 7.419999999999965
                   },
@@ -86,12 +66,7 @@
                     "id": "vBg17rKAir",
                     "position": 4.833,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 14.749907856143542
                   },
@@ -99,12 +74,7 @@
                     "id": "ltroXbctTj",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 14.749907856143542
                   },
@@ -112,12 +82,7 @@
                     "id": "V8ho-RkJ-V",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 14.749907856143542
                   },
@@ -125,12 +90,7 @@
                     "id": "GbNMg9gp24",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 9.180185491414942
                   },
@@ -138,12 +98,7 @@
                     "id": "7_AHsnYEMp",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.8801854914149752
                   },
@@ -151,12 +106,7 @@
                     "id": "fTQEPE9gdl",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.010185491414969128
                   },
@@ -164,12 +114,7 @@
                     "id": "4p7KWCYNKC",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -2.389750932517777
                   }
@@ -183,12 +128,7 @@
                     "id": "05wg82iWja",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 4
                   },
@@ -196,12 +136,7 @@
                     "id": "9qsEXpzUG3",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 4
                   },
@@ -209,12 +144,7 @@
                     "id": "jPg6CkQba0",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 6.469999999999964
                   },
@@ -222,12 +152,7 @@
                     "id": "2sf1VZd7MK",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 3.1199999999999477
                   },
@@ -235,12 +160,7 @@
                     "id": "lwUGL7guqY",
                     "position": 4.833,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 6.159967303772317
                   },
@@ -248,12 +168,7 @@
                     "id": "h7rVXR7CX1",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 6.159967303772317
                   },
@@ -261,12 +176,7 @@
                     "id": "T1C3Gvr2Cu",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.069967303772336
                   },
@@ -274,12 +184,7 @@
                     "id": "QYqXjh4PvP",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.7000114781581166
                   },
@@ -287,12 +192,7 @@
                     "id": "rMjWxH4d_X",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.6200114781581165
                   },
@@ -300,12 +200,7 @@
                     "id": "6av9HLKc_1",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.6300114781581165
                   },
@@ -313,12 +208,7 @@
                     "id": "gOogEL2HYD",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.7000106190151312
                   }
@@ -332,12 +222,7 @@
                     "id": "q33416wtNR",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 15
                   },
@@ -345,12 +230,7 @@
                     "id": "9cGyRbjxlo",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 15
                   },
@@ -358,12 +238,7 @@
                     "id": "zbJT-wZhCB",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 15
                   },
@@ -371,12 +246,7 @@
                     "id": "x7RT2BdaEV",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.5199999999999994
                   },
@@ -384,12 +254,7 @@
                     "id": "m1wIvOKQtn",
                     "position": 4.833,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.5599999999999994
                   },
@@ -397,12 +262,7 @@
                     "id": "2RIJ94D8G2",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.5599999999999994
                   },
@@ -410,12 +270,7 @@
                     "id": "PRC1CBvDWT",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.5599999999999994
                   },
@@ -423,12 +278,7 @@
                     "id": "iAIJehk8QA",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.7199926860714058
                   },
@@ -436,12 +286,7 @@
                     "id": "TQn9_0TLpM",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.6999926860714057
                   },
@@ -449,12 +294,7 @@
                     "id": "ZdO0FYht0l",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.6999926860714057
                   },
@@ -462,12 +302,7 @@
                     "id": "tEpFX0qVkC",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -3.499958320351975
                   }
@@ -481,12 +316,7 @@
                     "id": "BfMmkkjZwZ",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -494,12 +324,7 @@
                     "id": "zmtpydbzY4",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -507,12 +332,7 @@
                     "id": "tt5UgbQRxw",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -520,12 +340,7 @@
                     "id": "UUo5xMB46I",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -533,12 +348,7 @@
                     "id": "SadNK1B3W7",
                     "position": 4.833,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.04000000000000003
                   },
@@ -546,12 +356,7 @@
                     "id": "nUzS49R22z",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.04000000000000003
                   },
@@ -559,12 +364,7 @@
                     "id": "hqYgCzoaEo",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.04000000000000003
                   },
@@ -572,12 +372,7 @@
                     "id": "j3sPjeSeB5",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.07999882977621664
                   },
@@ -585,12 +380,7 @@
                     "id": "pl7Ojd6bWx",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.08999882977621665
                   },
@@ -598,12 +388,7 @@
                     "id": "gT-diaB-1P",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.09999882977621664
                   },
@@ -611,12 +396,7 @@
                     "id": "7TS9wZkoHW",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.06999907524714745
                   }
@@ -630,12 +410,7 @@
                     "id": "ODqChB2BUG",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -643,12 +418,7 @@
                     "id": "AfuYshMgEH",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -656,12 +426,7 @@
                     "id": "Z8q1QbUKeS",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -669,12 +434,7 @@
                     "id": "qIzEnbQzqb",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.3100000000000007
                   },
@@ -682,12 +442,7 @@
                     "id": "QXEt50_fqe",
                     "position": 4.833,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.379986996244264
                   },
@@ -695,12 +450,7 @@
                     "id": "pH8tqvsk_o",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.379986996244264
                   },
@@ -708,12 +458,7 @@
                     "id": "7GusCV2_G7",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.379986996244264
                   },
@@ -721,12 +466,7 @@
                     "id": "x9TXdNH_do",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1.070029707092901
                   },
@@ -734,12 +474,7 @@
                     "id": "JJ8zJGZ4Ou",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.3600297070929004
                   },
@@ -747,12 +482,7 @@
                     "id": "bhuZr8Y8go",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -0.009970292907099694
                   },
@@ -760,12 +490,7 @@
                     "id": "LcyRRAL8ug",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": -1.0799469735256866
                   }
@@ -779,12 +504,7 @@
                     "id": "cDEzAD0QE2",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -792,12 +512,7 @@
                     "id": "oUFnpSKU3q",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -805,12 +520,7 @@
                     "id": "9we04IguCj",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -818,12 +528,7 @@
                     "id": "qUr8MyrqOD",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -831,12 +536,7 @@
                     "id": "nBw_qUTd8F",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -844,12 +544,7 @@
                     "id": "bwEiV_C67y",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0
                   },
@@ -857,12 +552,7 @@
                     "id": "qXsUXn8sst",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.000001170206663565076
                   },
@@ -870,12 +560,7 @@
                     "id": "RjZzmFqB81",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.0000011702066635595199
                   },
@@ -883,12 +568,7 @@
                     "id": "fEQg_wcUXH",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.0000011702066635595199
                   },
@@ -896,12 +576,7 @@
                     "id": "mC0Q7FQlIy",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 0.0000011702066635595199
                   }
@@ -915,12 +590,7 @@
                     "id": "tqjhMfDkWQ",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -928,12 +598,7 @@
                     "id": "IkvFrvh-xF",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -941,12 +606,7 @@
                     "id": "wXrjEd8Prn",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -954,12 +614,7 @@
                     "id": "0_01HaN7m6",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -967,12 +622,7 @@
                     "id": "x1Q6eFg9l9",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -980,12 +630,7 @@
                     "id": "6o-Xsifb-3",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -993,12 +638,7 @@
                     "id": "mrlaBEEZiX",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1006,12 +646,7 @@
                     "id": "Xpmc9vgnsg",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1019,12 +654,7 @@
                     "id": "mkNBouLQZv",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1032,12 +662,7 @@
                     "id": "WFVc3EfdIO",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   }
@@ -1051,12 +676,7 @@
                     "id": "W0EfpZmKFn",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1064,12 +684,7 @@
                     "id": "RIp-556wOe",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1077,12 +692,7 @@
                     "id": "kMe52t9O9I",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1090,12 +700,7 @@
                     "id": "OKLF-Euk7Q",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1103,12 +708,7 @@
                     "id": "Hmo3nHt8R5",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1116,12 +716,7 @@
                     "id": "jfYyYTpqpu",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1129,12 +724,7 @@
                     "id": "Kbyt6bQ8jK",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1142,12 +732,7 @@
                     "id": "WoKRdBttrb",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1155,12 +740,7 @@
                     "id": "Cgx6qgrlq-",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1168,12 +748,7 @@
                     "id": "CgakKpuwuA",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   }
@@ -1187,12 +762,7 @@
                     "id": "pOc1sQZqCJ",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1200,12 +770,7 @@
                     "id": "sCHsJLD9sa",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1213,12 +778,7 @@
                     "id": "TYzPiroQst",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1226,12 +786,7 @@
                     "id": "9A42dVhRCd",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1239,12 +794,7 @@
                     "id": "vgOlIb2lC5",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1252,12 +802,7 @@
                     "id": "rPKprLSjA7",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1265,12 +810,7 @@
                     "id": "516IkzHW7X",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1278,12 +818,7 @@
                     "id": "m1keRHq5lB",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1291,12 +826,7 @@
                     "id": "VRMdsegUMe",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1304,12 +834,7 @@
                     "id": "88khR5p59H",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   }
@@ -1323,12 +848,7 @@
                     "id": "Bo3yB3v5jE",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1336,12 +856,7 @@
                     "id": "UCygUPnojo",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1349,12 +864,7 @@
                     "id": "W6Ty4BYhp6",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1362,12 +872,7 @@
                     "id": "1tA6kuaFmV",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1375,12 +880,7 @@
                     "id": "0XU3gz1sgi",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1388,12 +888,7 @@
                     "id": "g1ELHQGDoj",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1401,12 +896,7 @@
                     "id": "K6e5NsJsXZ",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1414,12 +904,7 @@
                     "id": "1lYfCXADHj",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1427,12 +912,7 @@
                     "id": "4J0jbz9aku",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1440,12 +920,7 @@
                     "id": "5UVKVsdzvG",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   }
@@ -1459,12 +934,7 @@
                     "id": "aL0-aFcnDk",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1472,12 +942,7 @@
                     "id": "4It67pZd_O",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1485,12 +950,7 @@
                     "id": "tuBe6XC9tH",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1498,12 +958,7 @@
                     "id": "5T4c5nyMSM",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1511,12 +966,7 @@
                     "id": "xKHJX_Ypjx",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1524,12 +974,7 @@
                     "id": "aMtGFn1Jui",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1537,12 +982,7 @@
                     "id": "UnWaeus0Ym",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1550,12 +990,7 @@
                     "id": "xLMItnp31E",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1563,12 +998,7 @@
                     "id": "JAaJsGdr-k",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   },
@@ -1576,12 +1006,7 @@
                     "id": "wvXmn5oNRq",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 150
                   }
@@ -1595,12 +1020,7 @@
                     "id": "YVB03Pv5Xc",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1608,12 +1028,7 @@
                     "id": "0RhfKthhTR",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1621,12 +1036,7 @@
                     "id": "494a3LopAE",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1634,12 +1044,7 @@
                     "id": "Z3b0ucKYIV",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1647,12 +1052,7 @@
                     "id": "igwBGvokP6",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1660,12 +1060,7 @@
                     "id": "xZc6iWJP6n",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1673,12 +1068,7 @@
                     "id": "DZBQycZUrm",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1686,12 +1076,7 @@
                     "id": "XOlvvscJhK",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1699,12 +1084,7 @@
                     "id": "DaFq6KBbdN",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   },
@@ -1712,12 +1092,7 @@
                     "id": "0iC3-Yv-ri",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 100
                   }
@@ -1731,12 +1106,7 @@
                     "id": "yJZu0CDrEE",
                     "position": 0,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 1
                   },
@@ -1744,12 +1114,7 @@
                     "id": "PkYpD-Efvu",
                     "position": 0.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 3.1899999999999875
                   },
@@ -1757,12 +1122,7 @@
                     "id": "LAAVrU1zIP",
                     "position": 2.1,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 33.95999999999989
                   },
@@ -1770,12 +1130,7 @@
                     "id": "2T0d07d1kP",
                     "position": 3.4,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 18.00999999999996
                   },
@@ -1783,12 +1138,7 @@
                     "id": "T2Rg8hJSYZ",
                     "position": 4.833,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 6.670612798621525
                   },
@@ -1796,12 +1146,7 @@
                     "id": "U9PsDS0Kui",
                     "position": 4.867,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 6.670612798621525
                   },
@@ -1809,12 +1154,7 @@
                     "id": "bOnHZarV9z",
                     "position": 5.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 6.670612798621525
                   },
@@ -1822,12 +1162,7 @@
                     "id": "PDcBwUZ7Le",
                     "position": 6.633,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 34.76850672859241
                   },
@@ -1835,12 +1170,7 @@
                     "id": "aMfEY4a5HV",
                     "position": 7.533,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 22.86850672859249
                   },
@@ -1848,12 +1178,7 @@
                     "id": "7xYf7U4msG",
                     "position": 8.967,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 52.21850672859251
                   },
@@ -1861,12 +1186,7 @@
                     "id": "_KhHrE3NHi",
                     "position": 10,
                     "connectedRight": true,
-                    "handles": [
-                      0.5,
-                      1,
-                      0.5,
-                      0
-                    ],
+                    "handles": [0.5, 1, 0.5, 0],
                     "type": "bezier",
                     "value": 2.0701700108537673
                   }
@@ -1894,7 +1214,5 @@
     }
   },
   "definitionVersion": "0.4.0",
-  "revisionHistory": [
-    "3oWKI6k44yFquysw"
-  ]
+  "revisionHistory": ["3oWKI6k44yFquysw"]
 }
