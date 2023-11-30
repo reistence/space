@@ -1,12 +1,18 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 export function JellyFish(props) {
   const { nodes, materials } = useGLTF("/inktober_2_-_mindless.glb");
+
+  const jelly = useRef();
+  useFrame((state) => {
+    jelly.current.position.y = 1 - Math.sin(state.clock.elapsedTime) * 0.07;
+  });
   return (
-    <group {...props} dispose={null} scale={0.5}>
+    <group {...props} dispose={null} scale={0.5} ref={jelly}>
       <group
-        position={[7, 3, -5]}
+        position={[7, 2, -5]}
         rotation={[-0.017, 0.62, -0.197]}
         scale={[3.498, 3.287, 3.494]}
       >
