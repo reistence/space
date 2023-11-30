@@ -1,6 +1,11 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import "./App.scss";
-import { OrbitControls, ScrollControls, useScroll } from "@react-three/drei";
+import {
+  OrbitControls,
+  ScrollControls,
+  useDepthBuffer,
+  useScroll,
+} from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
 import {
   SheetProvider,
@@ -25,6 +30,9 @@ import WorkInProgress from "./components/Sections/working/WorkInProgress";
 import { Ufo } from "./components/Ufo";
 import { AmbientLight } from "three";
 import { Ufo2 } from "./components/Ufo2";
+import { FlyingAstro } from "./components/FlyingAstro";
+import { Unknown } from "./components/Unknown";
+import { MovingSpot } from "./components/MovingSpot";
 
 function App() {
   const cursor = useRef(null);
@@ -173,6 +181,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
 
   // console.log(sheet.sequence.position);
 
+  const depthBuffer = useDepthBuffer({ frames: 1 });
   const s = async (targetPosition) => {
     o = false;
     sheet.sequence.position = 4.53584070521234;
@@ -189,10 +198,16 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
         near={0.5}
         far={100}
       />
+      {/* <MovingSpot
+        depthBuffer={depthBuffer}
+        color="white"
+        position={[0, 0.1, -6]}
+      /> */}
       {/* <OrbitControls /> */}
       <Spaceboi currentPageValue={currentPageValue} />
       <ChanisawAstro />
-
+      <FlyingAstro />
+      {/* <Unknown /> */}
       <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
     </>

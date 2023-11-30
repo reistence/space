@@ -6,18 +6,26 @@ Source: https://sketchfab.com/3d-models/simple-ufo-with-lights-533f12e402f2477cb
 Title: Simple UFO with Lights
 */
 
-import React, { useRef } from "react";
-import { useGLTF } from "@react-three/drei";
-import { AmbientLight } from "three";
+import React, { useMemo, useRef } from "react";
+import { SpotLight, useDepthBuffer, useGLTF } from "@react-three/drei";
+import { AmbientLight, PointLight } from "three";
+import { MovingSpot } from "./MovingSpot";
 
 export function Ufo(props) {
   const { nodes, materials } = useGLTF("/simple_ufo_with_lights.glb");
+  const depthBuffer = useDepthBuffer({ frames: 1 });
+
   return (
     <>
       <ambientLight intensity={3} color={"white"} />
+      {/* <MovingSpot
+        depthBuffer={depthBuffer}
+        color="white"
+        position={[0, 0.1, -6]}
+      /> */}
       <group {...props} scale={0.2} dispose={null} position={[0, 0.1, -6]}>
         <group rotation={[-Math.PI / 2, 0, 0]} scale={0.125}>
-          <group rotation={[Math.PI / 2, 0, 0]} scale={0.01}>
+          <group rotation={[Math.PI / 2, 0, 0]} scale={0.1}>
             <group
               position={[-15.626, 938.601, 28.612]}
               rotation={[-1.284, 0.134, -0.039]}
@@ -91,7 +99,7 @@ export function Ufo(props) {
                 material={materials["Vidro.001"]}
               />
             </group>
-            <group
+            {/* <group
               position={[448.436, 789.431, -132.305]}
               rotation={[-2.046, 0.073, 2.451]}
               scale={234.157}
@@ -165,7 +173,7 @@ export function Ufo(props) {
                 geometry={nodes.Base_Form001_Vidro001_0.geometry}
                 material={materials["Vidro.001"]}
               />
-            </group>
+            </group> */}
           </group>
         </group>
       </group>
