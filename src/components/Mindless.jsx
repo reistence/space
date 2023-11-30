@@ -1,8 +1,17 @@
 import React, { useRef } from "react";
 import { useGLTF } from "@react-three/drei";
+import { useFrame } from "@react-three/fiber";
 
 export function Mindless(props) {
   const { nodes, materials } = useGLTF("/inktober_2019_2_mindless.glb");
+
+  const atom = useRef();
+
+  useFrame((state) => {
+    atom.current.rotation.x += 0.001;
+    atom.current.rotation.y += 0.001;
+    atom.current.rotation.z += 0.001;
+  });
   return (
     <group {...props} dispose={null} scale={0.1} position={[-0.1, 5, 1.337]}>
       <group position={[0, 0, 0.337]} rotation={[-2.338, 0.203, 3.118]}>
@@ -25,7 +34,11 @@ export function Mindless(props) {
           material={materials.black}
         />
       </group>
-      <group position={[-0.1, -0.35, 0.337]} rotation={[-2.338, 0.203, 3.118]}>
+      <group
+        ref={atom}
+        position={[-0.1, 0.85, 0.337]}
+        rotation={[-2.338, 0.203, 3.118]}
+      >
         <mesh
           castShadow
           receiveShadow
