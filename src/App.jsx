@@ -216,7 +216,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       {/* <FlyingAstro /> */}
       {/* <Unknown /> */}
       {/* <Bait /> */}
-      {/* <Mindless /> */}
+      <Mindless />
       <Tv />
 
       <Ufo onClick={() => s(4)} />

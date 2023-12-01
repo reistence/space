@@ -10,9 +10,15 @@ export function JellyFish(props) {
     jelly.current.position.y = 1 - Math.sin(state.clock.elapsedTime) * 0.07;
   });
   return (
-    <group {...props} dispose={null} scale={0.5} ref={jelly}>
+    <group
+      {...props}
+      dispose={null}
+      scale={0.5}
+      ref={jelly}
+      // position={[7, 2, -5]}
+    >
       <group
-        position={[7, 2, -5]}
+        position={[12, 12, -5]}
         rotation={[-0.017, 0.62, -0.197]}
         scale={[3.498, 3.287, 3.494]}
       >
@@ -35,14 +41,14 @@ export function JellyFish(props) {
           material={materials.Outer_Threads}
         />
       </group>
-      <mesh
+      {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.Object_4.geometry}
         material={materials.Inner_Threads_1}
         position={[-0.461, -1.113, 0.041]}
-      />
-      <mesh
+      /> */}
+      {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.Object_10.geometry}
@@ -50,8 +56,8 @@ export function JellyFish(props) {
         position={[0.042, -0.283, 0.006]}
         rotation={[-0.017, -0.242, -0.197]}
         scale={[3.498, 3.287, 3.494]}
-      />
-      <mesh
+      /> */}
+      {/* <mesh
         castShadow
         receiveShadow
         geometry={nodes.Object_12.geometry}
@@ -59,7 +65,7 @@ export function JellyFish(props) {
         position={[-0.558, -1.265, 0.1]}
         rotation={[2.147, 0.846, -1.901]}
         scale={[0.674, 1.081, 0.659]}
-      />
+      /> */}
     </group>
   );
 }

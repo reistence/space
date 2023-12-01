@@ -13,7 +13,7 @@ export function Mindless(props) {
     atom.current.rotation.z += 0.001;
   });
   return (
-    <group {...props} dispose={null} scale={0.1} position={[-0.1, 5, 1.337]}>
+    <group {...props} dispose={null} scale={0.1} position={[0.1, 4, 1.337]}>
       <group position={[0, 0, 0.337]} rotation={[-2.338, 0.203, 3.118]}>
         <mesh
           castShadow
@@ -68,7 +68,7 @@ export function Mindless(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_13.geometry}
-        material={materials.black}
+        material={materials.white}
         position={[-5.762, -25.62, -0.877]}
         rotation={[0.219, 0, 0.092]}
       />
@@ -76,7 +76,7 @@ export function Mindless(props) {
         castShadow
         receiveShadow
         geometry={nodes.Object_15.geometry}
-        material={materials.white}
+        material={materials.black}
         position={[-5.782, -25.33, -0.865]}
         rotation={[0.219, 0, 0.092]}
       />
