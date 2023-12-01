@@ -40,6 +40,7 @@ import { Bait } from "./components/Bait";
 import { JellyFish } from "./components/JellyFish";
 import { Mindless } from "./components/Mindless";
 import { Tv } from "./components/Tv";
+import { ChasingShip } from "./components/ChasingShip";
 
 function App() {
   const cursor = useRef(null);
@@ -222,6 +223,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       <Ufo onClick={() => s(4)} />
       <Ufo2 currentPageValue={currentPageValue} />
       {/* <Prova /> */}
+      <ChasingShip />
       <JellyFish />
       <Helmet />
     </>
