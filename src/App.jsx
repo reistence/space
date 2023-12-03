@@ -16,7 +16,8 @@ import {
 import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
 
-import fly from "./fly.json";
+// import fly from "./fly.json";
+import fly from "./plane.json";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
@@ -137,7 +138,7 @@ function App() {
         currentPageValue={currentPageValue}
       />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
-        <ScrollControls pages={20} damping={1} maxSpeed={0.3}>
+        <ScrollControls pages={20} damping={2} maxSpeed={0.1}>
           <SheetProvider sheet={sheet}>
             <Scene
               currentPageValue={currentPageValue}
@@ -147,13 +148,13 @@ function App() {
         </ScrollControls>
       </Canvas>
       {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
-      <About currentPageValue={currentPageValue} />
+      {/* <About currentPageValue={currentPageValue} />
 
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
       <Contacts currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
-      <Credits currentPageValue={currentPageValue} />
+      <Credits currentPageValue={currentPageValue} /> */}
       <div className="cursor-style" ref={cursor}></div>
     </div>
   );
@@ -175,6 +176,8 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
   const scroll = useScroll();
   let o = true;
 
+  const world = useRef();
+
   useFrame(() => {
     const sequenceLength = val(sheet.sequence.pointer.length);
     if (scroll) {
@@ -185,16 +188,18 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     if (o) {
       sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
     }
+
+    world.current.rotation.y += 0.0009;
   });
 
   // console.log(sheet.sequence.position);
 
-  const depthBuffer = useDepthBuffer({ frames: 1 });
   const s = async (targetPosition) => {
     o = false;
     sheet.sequence.position = 4.53584070521234;
     console.log(o);
   };
+
   return (
     <>
       {/* <color attach='background' args={['black']}/> */}
@@ -212,20 +217,22 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
         position={[0, 0.1, -6]}
       /> */}
       <OrbitControls />
-      <Spaceboi currentPageValue={currentPageValue} />
-      <ChanisawAstro />
-      {/* <FlyingAstro /> */}
-      {/* <Unknown /> */}
-      {/* <Bait /> */}
-      <Mindless />
-      <Tv />
+      <group ref={world}>
+        <Spaceboi currentPageValue={currentPageValue} />
+        {/* <FlyingAstro /> */}
+        {/* <Unknown /> */}
+        {/* <Bait /> */}
+        {/* <Mindless /> */}
+        {/* <Tv /> */}
 
-      <Ufo onClick={() => s(4)} />
+        {/* <Prova /> */}
+        <JellyFish />
+        <Helmet />
+      </group>
       <Ufo2 currentPageValue={currentPageValue} />
-      {/* <Prova /> */}
+      <ChanisawAstro />
+      <Ufo onClick={() => s(4)} />
       <ChasingShip />
-      <JellyFish />
-      <Helmet />
     </>
   );
 }

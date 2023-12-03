@@ -36,7 +36,7 @@ export function Ufo2(props) {
   useFrame((state) => {
     // console.log(state.camera.position);
 
-    if (props.currentPageValue < 9) {
+    if (props.currentPageValue < 21) {
       ufo.current.position.lerp(
         vec.set(
           (state.mouse.x * viewport.width) / 2,
@@ -45,7 +45,7 @@ export function Ufo2(props) {
         ),
         0.015
       );
-    } else if (props.currentPageValue > 9 && props.currentPageValue <= 16) {
+    } else if (props.currentPageValue > 21 && props.currentPageValue <= 26) {
       ufo.current.position.lerp(
         vec.set(
           3,
@@ -54,10 +54,20 @@ export function Ufo2(props) {
         ),
         0.015
       );
-    } else if (props.currentPageValue > 17) {
+    } else if (props.currentPageValue >= 38) {
       ufo.current.position.lerp(
         vec.set(
           Math.max(Math.round(pointer.x * 10), -1.5),
+          Math.max((state.mouse.y * viewport.height) / 2, -0.7),
+          Math.min((state.mouse.x * viewport.width) / 2, 0.5)
+        ),
+        0.015
+      );
+    } else if (props.currentPageValue >= 50) {
+      ufo.current.position.lerp(
+        vec.set(
+          // Math.max(Math.round(pointer.x * 10), -1.5),
+          3,
           Math.max((state.mouse.y * viewport.height) / 2, -0.7),
           Math.min((state.mouse.x * viewport.width) / 2, 0.5)
         ),

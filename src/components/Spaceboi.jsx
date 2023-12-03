@@ -76,26 +76,26 @@ export function Spaceboi(props) {
           scale={150}
           //   position={[0, 100, 0]}
         >
-          {/* <animated.mesh
+          <animated.mesh
             castShadow
             receiveShadow
             geometry={nodes.body_Material001_0.geometry}
             material={materials["Material.001"]}
             // scale={scale}
-            rotation={rotation}
+            // rotation={rotation}
             onClick={(e) => {
               e.stopPropagation();
               // console.log("click");
               // setActive(!active);
             }}
-          /> */}
-          {/* <animated.mesh
+          />
+          <animated.mesh
             castShadow
             receiveShadow
-            rotation={rotation}
+            // rotation={rotation}
             geometry={nodes.body_Material002_0.geometry}
             material={materials["Material.002"]}
-          /> */}
+          />
         </group>
         <group
           position={[-357.404, 392.646, 0]}
