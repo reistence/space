@@ -34,6 +34,8 @@ export function ChasingShip(props) {
   let vec = new Vector3();
 
   const viewport = useThree((state) => state.viewport);
+  const play = async () => await sheet.sequence.play({ rate: 0.1 });
+  const pause = async () => await sheet.sequence.pause();
   useFrame((state) => {
     if (group.current) {
       plane.onValuesChange((val) => {
@@ -63,18 +65,20 @@ export function ChasingShip(props) {
     actions["Take 001"].play();
   });
 
-  const handleDragEnd = () => {
-    const model = meshRef.current;
-    debugger;
-  };
   const { scale } = useSpring({
     scale: propulsor ? 0.8 : 0,
     config: config.wobbly,
   });
 
   useEffect(() => {
-    const speedUp = () => setPropulsor(true);
-    const slowDown = () => setPropulsor(false);
+    const speedUp = () => {
+      setPropulsor(true);
+      play();
+    };
+    const slowDown = () => {
+      setPropulsor(false);
+      pause();
+    };
 
     window.addEventListener("mousedown", speedUp);
     window.addEventListener("mouseup", slowDown);

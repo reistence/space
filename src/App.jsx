@@ -138,14 +138,14 @@ function App() {
         currentPageValue={currentPageValue}
       />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
-        <ScrollControls pages={20} damping={2} maxSpeed={0.1}>
-          <SheetProvider sheet={sheet}>
-            <Scene
-              currentPageValue={currentPageValue}
-              setCurrentPageValue={setCurrentPageValue}
-            />
-          </SheetProvider>
-        </ScrollControls>
+        {/* <ScrollControls pages={20} damping={2} maxSpeed={0.1}> */}
+        <SheetProvider sheet={sheet}>
+          <Scene
+            currentPageValue={currentPageValue}
+            setCurrentPageValue={setCurrentPageValue}
+          />
+        </SheetProvider>
+        {/* </ScrollControls> */}
       </Canvas>
       {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
       {/* <About currentPageValue={currentPageValue} />
@@ -185,9 +185,9 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     }
     // console.log(o);
 
-    if (o) {
-      sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
-    }
+    // if (o) {
+    //   sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
+    // }
 
     // world.current.rotation.y += 0.0009;
   });
