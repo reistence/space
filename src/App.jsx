@@ -189,7 +189,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
       sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
     }
 
-    world.current.rotation.y += 0.0009;
+    // world.current.rotation.y += 0.0009;
   });
 
   // console.log(sheet.sequence.position);
@@ -216,7 +216,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
         color="white"
         position={[0, 0.1, -6]}
       /> */}
-      <OrbitControls />
+      {/* <OrbitControls /> */}
       <group ref={world}>
         <Spaceboi currentPageValue={currentPageValue} />
         {/* <FlyingAstro /> */}
