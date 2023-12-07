@@ -3,7 +3,7 @@ import styles from "./about.module.scss";
 import shuffleLetters from "shuffle-letters";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 import pic from "/pic.png";
-const About = ({ currentPageValue }) => {
+const About = ({ currentPageValue, openText }) => {
   const initialValue = "About";
   const [text, setText] = useState(initialValue);
   const titleRef = useRef();
@@ -65,13 +65,13 @@ const About = ({ currentPageValue }) => {
     return (
       <div className={styles.about}>
         <div>
-          <h3
+          {/* <h3
             id="aboutTitle"
             ref={titleRef}
             // onMouseOver={handleMouseOver}
           >
             {text}
-          </h3>
+          </h3> */}
 
           <div className={styles.pic}>{/* <img src={pic} /> */}</div>
         </div>

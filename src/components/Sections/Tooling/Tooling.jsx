@@ -55,9 +55,9 @@ const Tooling = ({ currentPageValue }) => {
       <>
         <div className={styles.tooling}>
           <div className={styles.header}>
-            <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
+            {/* <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
               {text}
-            </h3>
+            </h3> */}
           </div>
           <div className={styles.orbit}>
             <ul className={styles.orbitWrap}>

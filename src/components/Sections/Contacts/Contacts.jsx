@@ -47,17 +47,20 @@ const Contacts = ({ currentPageValue }) => {
   //   }
   // }, [currentPageValue]);
 
-  if (currentPageValue === 23 || currentPageValue === 24) {
+  if (
+    // currentPageValue === 22 ||
+    currentPageValue === 23
+  ) {
     return (
       <>
         <div className={styles.tooling}>
           <div className={styles.header}>
-            <h3
+            {/* <h3
               ref={titleRef}
               // onMouseOver={handleMouseOver}
             >
               {text}
-            </h3>
+            </h3> */}
           </div>
           <div className={styles.wrapper}>
             <a className={styles.icon} href="https://github.com/reistence">

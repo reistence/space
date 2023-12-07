@@ -53,7 +53,7 @@ const Experience = ({ currentPageValue }) => {
   // }, [currentPageValue]);
 
   if (
-    currentPageValue === 17 ||
+    // currentPageValue === 17 ||
     currentPageValue === 18 ||
     currentPageValue === 19
   ) {
@@ -61,9 +61,9 @@ const Experience = ({ currentPageValue }) => {
       <>
         <div className={styles.tooling}>
           <div className={styles.header}>
-            <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
+            {/* <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
               {text}
-            </h3>
+            </h3> */}
           </div>
           <div className={styles.wrapper}>
             <div className={styles.block}>

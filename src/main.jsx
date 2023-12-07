@@ -5,7 +5,7 @@ import Loading from "./components/Loading/Loading.jsx";
 import { lazy } from "react";
 import Cursor from "./components/Cursor/Cursor.jsx";
 import Wave from "./components/Cursor/Wave.jsx";
-import SpaceShip from "./components/Cursor/SpaceShip.jsx";
+
 const App = lazy(() => import("./App.jsx"));
 // import studio from "@theatre/studio";
 // import extension from "@theatre/r3f/dist/extension";
