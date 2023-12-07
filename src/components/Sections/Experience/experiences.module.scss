@@ -96,6 +96,7 @@
           .companyPic {
             width: 5em;
             height: 5em;
+            pointer-events: all !important;
 
             & > img {
               width: 100%;
@@ -153,10 +154,12 @@
           align-items: flex-end;
           justify-content: flex-start;
           gap: 1.5em;
+          pointer-events: all;
 
           .companyPic {
             width: 5em;
             height: 5em;
+            pointer-events: all !important;
 
             & > img {
               width: 100%;
