@@ -14,6 +14,7 @@
   transform: translate(-50%, -50%);
   width: 60%;
   pointer-events: none;
+  font-family: "space" !important;
 
   height: auto;
   min-height: 500px;
@@ -51,6 +52,7 @@
       position: absolute;
       top: -50px;
       left: 60px;
+      font-family: "space-body" !important;
     }
   }
 }
@@ -590,6 +592,8 @@ ul[className^="ring"] li {
   //   width: 1.5em;
   //   height: 1.5em;
   // }
+  pointer-events: all;
+
   line-height: 1.8em;
   text-align: center;
   background: rgb(255, 255, 255);

@@ -7,6 +7,7 @@
   height: auto;
   // background-color: rgba(0, 0, 0, 0);
   padding: 3em;
+  pointer-events: none;
   // backdrop-filter: blur(10px);
   // backdrop-filter: blur(10px);
 
@@ -19,7 +20,8 @@
   border-radius: 20px;
   // border: 1px solid white;
   overflow: hidden;
-  animation: entrance 2s ease 0s 1 normal forwards;
+  animation: scalein 2s ease 0s 1 normal forwards;
+
   //   backdrop-filter: blur(10px);
   //   background-color: rgba(0, 0, 0, 0.108);
 
@@ -40,6 +42,8 @@
       font-size: 50px;
       align-self: flex-end;
       // position: absolute;
+      font-family: "space-body" !important;
+
       // top: -50px;
       // left: 0;
     }
@@ -75,6 +79,18 @@
 
   100% {
     opacity: 1;
+    // transform: scale(1);
+  }
+}
+
+@keyframes scalein {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+
     // transform: scale(1);
   }
 }

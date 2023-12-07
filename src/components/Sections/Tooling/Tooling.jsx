@@ -17,7 +17,7 @@ import js from "../../../assets/icons/js.png";
 import astro from "../../../assets/icons/astro.png";
 
 const Tooling = ({ currentPageValue }) => {
-  const initialValue = "Stuff I've fun with";
+  const initialValue = "Tooling";
   const [text, setText] = useState(initialValue);
   const titleRef = useRef();
 
@@ -50,7 +50,7 @@ const Tooling = ({ currentPageValue }) => {
       iteration += 1 / 3;
     }, 60);
   };
-  if (currentPageValue === 9) {
+  if (currentPageValue === 13 || currentPageValue === 14) {
     return (
       <>
         <div className={styles.tooling}>
@@ -62,7 +62,7 @@ const Tooling = ({ currentPageValue }) => {
           <div className={styles.orbit}>
             <ul className={styles.orbitWrap}>
               <li className={styles.orbitCenter}>
-                <i className={styles.orbitCenterIcon}> {"</>"}</i>
+                <i className={styles.orbitCenterIcon}> {""}</i>
               </li>
               {/* <li>
                 <ul className={styles.ring0}>

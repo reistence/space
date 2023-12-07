@@ -38,21 +38,25 @@ const Experience = ({ currentPageValue }) => {
     }, 60);
   };
 
-  useEffect(() => {
-    if (titleRef.current) {
-      shuffleLetters(titleRef.current, {
-        fps: 10,
-      });
-    }
-    // if (pRef.current) {
-    //   shuffleLetters(pRef.current, {
-    //     fps: 60,
-    //   });
-    //   // typing.current.play();
-    // }
-  }, [currentPageValue]);
+  // useEffect(() => {
+  //   if (titleRef.current) {
+  //     shuffleLetters(titleRef.current, {
+  //       fps: 10,
+  //     });
+  //   }
+  //   // if (pRef.current) {
+  //   //   shuffleLetters(pRef.current, {
+  //   //     fps: 60,
+  //   //   });
+  //   //   // typing.current.play();
+  //   // }
+  // }, [currentPageValue]);
 
-  if (currentPageValue === 12) {
+  if (
+    currentPageValue === 17 ||
+    currentPageValue === 18 ||
+    currentPageValue === 19
+  ) {
     return (
       <>
         <div className={styles.tooling}>

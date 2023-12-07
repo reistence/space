@@ -21,7 +21,8 @@
   border-radius: 20px;
   // border: 1px solid white;
   overflow: hidden;
-  animation: entrance 2s ease 0s 1 normal forwards;
+  // animation: entrance 2s ease 0s 1 normal forwards;
+  animation: scalein 2s ease 0s 1 normal forwards;
   backdrop-filter: blur(10px);
   background-color: rgba(0, 0, 0, 0.108);
 
@@ -33,10 +34,12 @@
 
     & > h3 {
       font-size: 24px;
+      font-family: "space-body" !important;
     }
     & > span,
     p {
       font-size: 13px !important;
+      font-family: "space-body" !important;
     }
   }
 
@@ -50,6 +53,8 @@
     & > h3 {
       font-size: 50px;
       align-self: flex-end;
+      font-family: "space-body" !important;
+
       // position: absolute;
       // top: -50px;
       // left: 0;
@@ -129,7 +134,7 @@
           align-self: flex-start;
           justify-content: flex-start;
           list-style-type: disc;
-          font-size: 14px;
+          font-size: 16px;
           margin-bottom: 0.7em;
         }
 
@@ -165,6 +170,18 @@
 
   100% {
     opacity: 1;
+    // transform: scale(1);
+  }
+}
+
+@keyframes scalein {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+
     // transform: scale(1);
   }
 }

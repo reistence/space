@@ -17,7 +17,7 @@ import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
 
 // import fly from "./fly.json";
-import fly from "./plane.json";
+import fly from "./flydef.json";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
@@ -138,23 +138,23 @@ function App() {
         currentPageValue={currentPageValue}
       />
       <Canvas gl={{ preserveDrawingBuffer: true }}>
-        {/* <ScrollControls pages={20} damping={2} maxSpeed={0.1}> */}
-        <SheetProvider sheet={sheet}>
-          <Scene
-            currentPageValue={currentPageValue}
-            setCurrentPageValue={setCurrentPageValue}
-          />
-        </SheetProvider>
-        {/* </ScrollControls> */}
+        <ScrollControls pages={30} damping={1} maxSpeed={0.1}>
+          <SheetProvider sheet={sheet}>
+            <Scene
+              currentPageValue={currentPageValue}
+              setCurrentPageValue={setCurrentPageValue}
+            />
+          </SheetProvider>
+        </ScrollControls>
       </Canvas>
       {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
-      {/* <About currentPageValue={currentPageValue} />
+      <About currentPageValue={currentPageValue} />
 
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
       <Contacts currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
-      <Credits currentPageValue={currentPageValue} /> */}
+      <Credits currentPageValue={currentPageValue} />
       <div className="cursor-style" ref={cursor}></div>
     </div>
   );
@@ -185,9 +185,9 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
     }
     // console.log(o);
 
-    // if (o) {
-    //   sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
-    // }
+    if (o) {
+      sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
+    }
 
     // world.current.rotation.y += 0.0009;
   });

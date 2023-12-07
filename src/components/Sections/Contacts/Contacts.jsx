@@ -39,20 +39,23 @@ const Contacts = ({ currentPageValue }) => {
     }, 60);
   };
 
-  useEffect(() => {
-    if (titleRef.current) {
-      shuffleLetters(titleRef.current, {
-        fps: 10,
-      });
-    }
-  }, [currentPageValue]);
+  // useEffect(() => {
+  //   if (titleRef.current) {
+  //     shuffleLetters(titleRef.current, {
+  //       fps: 10,
+  //     });
+  //   }
+  // }, [currentPageValue]);
 
-  if (currentPageValue === 15) {
+  if (currentPageValue === 23 || currentPageValue === 24) {
     return (
       <>
         <div className={styles.tooling}>
           <div className={styles.header}>
-            <h3 ref={titleRef} onMouseOver={handleMouseOver}>
+            <h3
+              ref={titleRef}
+              // onMouseOver={handleMouseOver}
+            >
               {text}
             </h3>
           </div>

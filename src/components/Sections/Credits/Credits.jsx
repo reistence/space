@@ -36,15 +36,19 @@ const Credits = ({ currentPageValue }) => {
     }, 60);
   };
 
-  useEffect(() => {
-    if (titleRef.current) {
-      shuffleLetters(titleRef.current, {
-        fps: 10,
-      });
-    }
-  }, [currentPageValue]);
+  // useEffect(() => {
+  //   if (titleRef.current) {
+  //     shuffleLetters(titleRef.current, {
+  //       fps: 10,
+  //     });
+  //   }
+  // }, [currentPageValue]);
 
-  if (currentPageValue === 20 || currentPageValue === 21) {
+  if (
+    currentPageValue === 28 ||
+    currentPageValue === 29 ||
+    currentPageValue === 30
+  ) {
     return (
       <>
         <div className={styles.tooling}>

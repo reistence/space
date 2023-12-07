@@ -1,12 +1,12 @@
 @font-face {
   font-family: "space";
-  src: url("/font/Fakeblood.ttf") format("truetype");
+  src: url("/font/future.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: "space-body";
-  src: url("/font/Atiba.ttf") format("truetype");
+  src: url("/font/OtherFuture.ttf") format("truetype");
   font-weight: normal;
   font-style: normal;
 }
@@ -15,8 +15,8 @@
   padding: 0;
   box-sizing: border-box;
   letter-spacing: 2px;
-  // font-family: "space", cursive;
-  font-family: "Courier New", Courier, monospace;
+  font-family: "space", cursive;
+  // font-family: "Courier New", Courier, monospace;
   color: white;
 }
 
