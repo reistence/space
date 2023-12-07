@@ -18,6 +18,7 @@
   font-family: "space", cursive;
   // font-family: "Courier New", Courier, monospace;
   color: white;
+  cursor: none;
 }
 
 html,
@@ -27,7 +28,7 @@ body,
   height: 100%;
   overflow: hidden;
   background-color: black;
-  // cursor: none;
+  cursor: none;
 }
 
 ul {

@@ -2,6 +2,7 @@
   width: 100vw;
   height: 100vh;
   background-color: black;
+  cursor: none;
 
   .main-container {
     width: 100%;
@@ -9,7 +10,7 @@
     cursor: none;
 
     .cursor-style {
-      background-image: url("./assets/icons/rocket-black.png");
+      // background-image: url("./assets/icons/rocket-black.png");
       background-size: contain;
       height: 1.4em;
       width: 1.4em;
@@ -18,6 +19,9 @@
       transform: translate(-50%, -50%);
       position: fixed;
       pointer-events: none;
+      @media screen and (max-width: 800px) {
+        background-image: none;
+      }
 
       // &.start:before {
       //   content: "";

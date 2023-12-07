@@ -42,8 +42,6 @@ function App() {
   const [isMuted, setIsMuted] = useState(true);
   const playbackPosition = useRef(0);
 
-  const [openText, setOpenText] = useState("");
-
   const handleSoundToggle = () => {
     setIsMuted((prevState) => !prevState);
   };
@@ -122,8 +120,6 @@ function App() {
         <ScrollControls pages={30} damping={1} maxSpeed={0.1}>
           <SheetProvider sheet={sheet}>
             <Scene
-              openText={openText}
-              setOpenText={setOpenText}
               currentPageValue={currentPageValue}
               setCurrentPageValue={setCurrentPageValue}
             />
@@ -131,7 +127,7 @@ function App() {
         </ScrollControls>
       </Canvas>
       {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
-      <About currentPageValue={currentPageValue} openText={openText} />
+      <About currentPageValue={currentPageValue} />
 
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
@@ -154,10 +150,9 @@ function logCurrentPageCallback(scroll, callback) {
   callback(currentPage);
 }
 
-function Scene({ currentPageValue, setCurrentPageValue, setOpenText }) {
+function Scene({ currentPageValue, setCurrentPageValue }) {
   const sheet = useCurrentSheet();
   const scroll = useScroll();
-  let o = true;
 
   const world = useRef();
 
@@ -166,22 +161,11 @@ function Scene({ currentPageValue, setCurrentPageValue, setOpenText }) {
     if (scroll) {
       logCurrentPageCallback(scroll, setCurrentPageValue);
     }
-    // console.log(o);
 
-    if (o) {
-      sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
-    }
+    sheet.sequence.position = Math.max(scroll.offset * sequenceLength, 0);
 
     // world.current.rotation.y += 0.0009;
   });
-
-  // console.log(sheet.sequence.position);
-
-  const s = async (targetPosition) => {
-    o = false;
-    sheet.sequence.position = 4.53584070521234;
-    console.log(o);
-  };
 
   return (
     <>

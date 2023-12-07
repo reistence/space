@@ -3,7 +3,7 @@ import styles from "./about.module.scss";
 import shuffleLetters from "shuffle-letters";
 const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 import pic from "/pic.png";
-const About = ({ currentPageValue, openText }) => {
+const About = ({ currentPageValue }) => {
   const initialValue = "About";
   const [text, setText] = useState(initialValue);
   const titleRef = useRef();
