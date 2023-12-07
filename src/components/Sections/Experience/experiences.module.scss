@@ -80,6 +80,7 @@
 
       .date {
         width: 30%;
+        font-size: 11px;
 
         & > span {
           font-size: 11px;
@@ -92,6 +93,7 @@
           align-items: flex-start;
           justify-content: flex-start;
           gap: 1em;
+          font-size: 11px;
 
           .companyPic {
             width: 5em;
