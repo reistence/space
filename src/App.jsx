@@ -1,12 +1,6 @@
 import { Canvas, useFrame } from "@react-three/fiber";
 import "./App.scss";
-import {
-  OrbitControls,
-  ScrollControls,
-  Sky,
-  useDepthBuffer,
-  useScroll,
-} from "@react-three/drei";
+import { ScrollControls, useScroll } from "@react-three/drei";
 import { getProject, val } from "@theatre/core";
 import {
   SheetProvider,
@@ -19,26 +13,20 @@ import { ChanisawAstro } from "./components/ChainSawAstro";
 // import fly from "./fly.json";
 import fly from "./flydef.json";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
-import Header from "./components/Header/Header";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
 import Direction from "./components/Direction/Direction";
 import About from "./components/Sections/About/About";
 import Tooling from "./components/Sections/Tooling/Tooling";
 import Experience from "./components/Sections/Experience/Experience";
-import Cursor from "./components/Cursor/Cursor";
 import Contacts from "./components/Sections/Contacts/Contacts";
 import Credits from "./components/Sections/Credits/Credits";
 import WorkInProgress from "./components/Sections/working/WorkInProgress";
 import { Ufo } from "./components/Ufo";
-import { AmbientLight } from "three";
 import { Ufo2 } from "./components/Ufo2";
-import { Unknown } from "./components/Unknown";
-import { MovingSpot } from "./components/MovingSpot";
+
 import { Helmet } from "./components/Helmet";
-import { Bait } from "./components/Bait";
 import { JellyFish } from "./components/JellyFish";
-import { Mindless } from "./components/Mindless";
-import { Tv } from "./components/Tv";
+
 import { ChasingShip } from "./components/ChasingShip";
 import { Dragon } from "./components/Dragon";
 import { Word } from "./components/Word/Word";
@@ -207,21 +195,10 @@ function Scene({ currentPageValue, setCurrentPageValue, setOpenText }) {
         near={0.5}
         far={100}
       />
-      {/* <MovingSpot
-        depthBuffer={depthBuffer}
-        color="white"
-        position={[0, 0.1, -6]}
-      /> */}
-      {/* <OrbitControls /> */}
+
       <group ref={world}>
         <Spaceboi currentPageValue={currentPageValue} />
-        {/* <FlyingAstro /> */}
-        {/* <Unknown /> */}
-        {/* <Bait /> */}
-        {/* <Mindless /> */}
-        {/* <Tv /> */}
 
-        {/* <Prova /> */}
         <JellyFish />
         <Helmet />
       </group>
