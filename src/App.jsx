@@ -42,6 +42,7 @@ import { JellyFish } from "./components/JellyFish";
 import { Mindless } from "./components/Mindless";
 import { Tv } from "./components/Tv";
 import { ChasingShip } from "./components/ChasingShip";
+import { Dragon } from "./components/Dragon";
 
 function App() {
   const cursor = useRef(null);
@@ -229,6 +230,7 @@ function Scene({ currentPageValue, setCurrentPageValue }) {
         <JellyFish />
         <Helmet />
       </group>
+      <Dragon />
       <Ufo2 currentPageValue={currentPageValue} />
       <ChanisawAstro />
       <Ufo onClick={() => s(4)} />

@@ -92,7 +92,7 @@ const Credits = ({ currentPageValue }) => {
                 className={styles.icon}
                 href="https://sketchfab.com/3d-models/inktober-2-mindless-22e4f5d167ad4724883dd36cf935bdf7"
               >
-                Mindless
+                Jellyfish
               </a>
               <a
                 className={styles.icon}
@@ -105,6 +105,12 @@ const Credits = ({ currentPageValue }) => {
                 href="https://sketchfab.com/3d-models/simple-ufo-with-lights-533f12e402f2477cb438d4883144bba7"
               >
                 Ufos
+              </a>
+              <a
+                className={styles.icon}
+                href="https://sketchfab.com/3d-models/inktober-day-12-dragon-93ec917f35334836b9101b1bba72038b"
+              >
+                Dragon
               </a>
             </div>
             <div className={styles.section}>
