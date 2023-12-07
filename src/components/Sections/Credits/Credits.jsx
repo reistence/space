@@ -88,12 +88,12 @@ const Credits = ({ currentPageValue }) => {
               >
                 Chainsaw man
               </a>
-              <a
+              {/* <a
                 className={styles.icon}
                 href="https://sketchfab.com/3d-models/inktober-2-mindless-22e4f5d167ad4724883dd36cf935bdf7"
               >
                 Jellyfish
-              </a>
+              </a> */}
               <a
                 className={styles.icon}
                 href="https://sketchfab.com/3d-models/low-poly-space-helmet-untextured-5f1ec10379534ecbb320f8cfbb1dbe2a"
