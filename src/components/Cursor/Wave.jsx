@@ -2,7 +2,7 @@ import React, { useEffect, useRef, useState, ReactNode } from "react";
 import styles from "./cursor.module.scss";
 
 const Wave = () => {
-  const ref = (useRef < Element) | (null > null);
+  const ref = useRef([]);
   const [mounted, setMounted] = useState(false);
   const [clickEffects, setClickEffects] = useState([]);
 
@@ -23,8 +23,25 @@ const Wave = () => {
     }, 1800);
   };
 
+  const clean = () => {
+    const root = document.querySelector("#root");
+    setInterval(() => {
+      const w = document.querySelectorAll(".hooo");
+
+      if (w && root) {
+        w.forEach((span) => {
+          if (span) {
+            root.removeChild(span);
+          }
+        });
+      }
+    }, 30000);
+  };
+
   useEffect(() => {
     document.addEventListener("click", createClickEffect);
+
+    clean();
     // Cleanup the event listener
     return () => {
       document.removeEventListener("click", createClickEffect);
@@ -57,7 +74,7 @@ const Wave = () => {
       {clickEffects.map((effect, k) => (
         <span
           key={k}
-          className={styles.clickEffect}
+          className={`${styles.clickEffect} hooo`}
           style={{ top: `${effect.y}px`, left: `${effect.x}px` }}
         ></span>
       ))}
