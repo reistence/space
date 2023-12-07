@@ -9,6 +9,8 @@
   height: 400px;
   padding: 3em;
 
+  animation: scalein 2s ease 0s 1 normal forwards;
+
   // background-color: rgba(0, 0, 0, 0);
   // backdrop-filter: blur(10px);
   display: flex;
@@ -28,11 +30,14 @@
     position: relative;
 
     & > h3 {
-      font-size: 50px;
+      font-size: 30px;
       font-family: "space-body" !important;
       // align-self: center;
       // text-align: center;
       // margin-left: 40%;
+      @media screen and (max-width: 450px) {
+        font-size: 20px;
+      }
     }
 
     .pic {
@@ -59,7 +64,7 @@
   }
 
   & > p {
-    font-size: 22px;
+    font-size: 18px;
     font-family: "space";
     background-color: rgba(0, 0, 0, 0.137);
     backdrop-filter: blur(10px);
@@ -102,5 +107,17 @@
   100% {
     // opacity: 1;
     transform: translateY(0);
+  }
+}
+
+@keyframes scalein {
+  0% {
+    transform: translate(-50%, -50%) scale(0);
+  }
+
+  100% {
+    transform: translate(-50%, -50%) scale(1);
+
+    // transform: scale(1);
   }
 }

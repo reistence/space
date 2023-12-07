@@ -38,34 +38,38 @@ const About = ({ currentPageValue }) => {
     }, 60);
   };
 
-  useEffect(() => {
-    if (titleRef.current) {
-      shuffleLetters(titleRef.current, {
-        fps: 10,
-      });
-    }
-    if (pRef.current) {
-      shuffleLetters(pRef.current, {
-        fps: 60,
-      });
-      // typing.current.play();
-    }
-    // const timeoutId = setTimeout(() => {
-    //   typing.current.pause();
-    //   typing.current.currentTime = 0;
-    // }, 5000);
+  // useEffect(() => {
+  //   if (titleRef.current) {
+  //     shuffleLetters(titleRef.current, {
+  //       fps: 10,
+  //     });
+  //   }
+  //   if (pRef.current) {
+  //     shuffleLetters(pRef.current, {
+  //       fps: 60,
+  //     });
+  //     // typing.current.play();
+  //   }
+  //   // const timeoutId = setTimeout(() => {
+  //   //   typing.current.pause();
+  //   //   typing.current.currentTime = 0;
+  //   // }, 5000);
 
-    // // Cleanup function
-    // return () => {
-    //   clearTimeout(timeoutId);
-    // };
-  }, [currentPageValue]);
+  //   // // Cleanup function
+  //   // return () => {
+  //   //   clearTimeout(timeoutId);
+  //   // };
+  // }, [currentPageValue]);
 
-  if (currentPageValue === 7) {
+  if (currentPageValue === 7 || currentPageValue === 8) {
     return (
       <div className={styles.about}>
         <div>
-          <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
+          <h3
+            id="aboutTitle"
+            ref={titleRef}
+            // onMouseOver={handleMouseOver}
+          >
             {text}
           </h3>
 

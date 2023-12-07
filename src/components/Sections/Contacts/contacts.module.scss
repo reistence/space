@@ -39,11 +39,13 @@
     position: relative;
 
     & > h3 {
-      font-size: 50px;
+      font-size: 30px;
       align-self: flex-end;
       // position: absolute;
       font-family: "space-body" !important;
-
+      @media screen and (max-width: 450px) {
+        font-size: 20px;
+      }
       // top: -50px;
       // left: 0;
     }

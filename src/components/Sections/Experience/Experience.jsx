@@ -82,15 +82,14 @@ const Experience = ({ currentPageValue }) => {
                 <ul>
                   <li>
                     {" "}
-                    Front-end and back-end development and optimization of web
-                    app
+                    Front-end and back-end development of web and mobile app
                   </li>
-                  <li>Front-end development and design of mobile apps</li>
-                  <li>
+                  {/* <li>Front-end development and design of mobile apps</li> */}
+                  {/* <li>
                     Analysis and identification of customer needs to obtain an
                     overall view of projects and identify the most suitable
                     platforms and structures.
-                  </li>
+                  </li> */}
                   <li>
                     Definition of architecture, graphical interface, and
                     navigation models.

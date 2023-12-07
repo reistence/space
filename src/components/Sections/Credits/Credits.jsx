@@ -58,16 +58,22 @@ const Credits = ({ currentPageValue }) => {
             </h3>
           </div>
           <div className={styles.wrapper}>
-            <div>
+            <div className={styles.section}>
               <p>Font</p>
               <a
                 className={styles.icon}
-                href="https://www.fontspace.com/fakeblood-font-f105332"
+                href="https://www.fontspace.com/other-future-font-f97625"
               >
-                FakeBlood
+                Other Future
+              </a>
+              <a
+                className={styles.icon}
+                href="https://www.fontspace.com/st-future-is-here-1920-font-f106581"
+              >
+                Future is here
               </a>
             </div>
-            <div>
+            <div className={styles.section}>
               <p>GLB Models</p>
               <a
                 className={styles.icon}
@@ -75,15 +81,33 @@ const Credits = ({ currentPageValue }) => {
               >
                 Spaceboi
               </a>
-              <br />
+
               <a
                 className={styles.icon}
                 href="https://sketchfab.com/3d-models/chainsaw-man-darkness-demon-8218cc69a7a244ecbe49f842d9d882c7"
               >
                 Chainsaw man
               </a>
+              <a
+                className={styles.icon}
+                href="https://sketchfab.com/3d-models/inktober-2-mindless-22e4f5d167ad4724883dd36cf935bdf7"
+              >
+                Mindless
+              </a>
+              <a
+                className={styles.icon}
+                href="https://sketchfab.com/3d-models/low-poly-space-helmet-untextured-5f1ec10379534ecbb320f8cfbb1dbe2a"
+              >
+                Space Helmet
+              </a>
+              <a
+                className={styles.icon}
+                href="https://sketchfab.com/3d-models/simple-ufo-with-lights-533f12e402f2477cb438d4883144bba7"
+              >
+                Ufos
+              </a>
             </div>
-            <div>
+            <div className={styles.section}>
               <p>Sound</p>
               <a
                 className={styles.icon}

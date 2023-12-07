@@ -1,6 +1,6 @@
 .tooling {
   position: absolute;
-  top: 30%;
+  top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: max-content;
@@ -39,10 +39,13 @@
     position: relative;
 
     & > h3 {
-      font-size: 50px;
+      font-size: 30px;
       align-self: flex-end;
       // position: absolute;
       font-family: "space-body" !important;
+      @media screen and (max-width: 450px) {
+        font-size: 20px;
+      }
 
       // top: -50px;
       // left: 0;
@@ -53,14 +56,37 @@
     width: 100%;
     padding: 1em;
     display: flex;
+
     flex-direction: row;
+    flex-wrap: wrap;
     align-items: flex-start;
     border-radius: 10px;
-    gap: 3em;
+    gap: 2em;
+
+    @media screen and (max-width: 400px) {
+      flex-direction: column;
+    }
+
+    .section {
+      display: flex;
+      flex-direction: column;
+      width: calc(100% / 3 - 0.5em);
+
+      align-items: flex-start;
+
+      @media screen and (max-width: 400px) {
+        width: 100%;
+      }
+    }
 
     .icon {
-      width: 3em;
-      height: 3em;
+      // width: 3em;
+      // height: 3em;
+      font-size: 16px;
+      @media screen and (max-width: 450px) {
+        font-size: 14px;
+      }
+      pointer-events: all;
 
       & > img {
         width: 100%;
