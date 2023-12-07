@@ -10,7 +10,7 @@ const AudioBtn = ({ handleSoundToggle, isMuted, currentPageValue }) => {
       onClick={handleSoundToggle}
     >
       {currentPageValue === 1 || currentPageValue === 2 ? (
-        <span> {isMuted ? "Enable audio" : "Mute"}</span>
+        <span> {isMuted ? "Audio" : "Mute"}</span>
       ) : (
         <></>
       )}
