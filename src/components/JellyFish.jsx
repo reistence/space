@@ -18,7 +18,7 @@ export function JellyFish(props) {
       // position={[7, 2, -5]}
     >
       <group
-        position={[12, 12, -5]}
+        position={[12, 10.6, -5]}
         rotation={[-0.017, 0.62, -0.197]}
         scale={[3.498, 3.287, 3.494]}
       >
