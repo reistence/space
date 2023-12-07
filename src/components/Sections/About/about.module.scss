@@ -1,11 +1,12 @@
 .about {
   position: absolute;
-  top: 50%;
+  top: 60%;
   pointer-events: none;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 45%;
   min-width: 350px;
+  max-width: 500px;
   height: 400px;
   padding: 3em;
 

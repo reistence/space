@@ -25,10 +25,9 @@ import { Ufo } from "./components/Ufo";
 import { Ufo2 } from "./components/Ufo2";
 
 import { Helmet } from "./components/Helmet";
-import { JellyFish } from "./components/JellyFish";
 
 import { ChasingShip } from "./components/ChasingShip";
-import { Dragon } from "./components/Dragon";
+
 import { Word } from "./components/Word/Word";
 
 function App() {
@@ -198,8 +197,6 @@ function Scene({ currentPageValue, setCurrentPageValue, setOpenText }) {
 
       <group ref={world}>
         <Spaceboi currentPageValue={currentPageValue} />
-
-        <JellyFish />
         <Helmet />
       </group>
       <Word
@@ -246,7 +243,7 @@ function Scene({ currentPageValue, setCurrentPageValue, setOpenText }) {
   only towards the first end.`}
         scale={0.05}
       /> */}
-      <Dragon />
+
       <Ufo2 currentPageValue={currentPageValue} />
       <ChanisawAstro />
       <Ufo onClick={() => s(4)} />

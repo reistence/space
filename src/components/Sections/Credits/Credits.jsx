@@ -106,12 +106,6 @@ const Credits = ({ currentPageValue }) => {
               >
                 Ufos
               </a>
-              <a
-                className={styles.icon}
-                href="https://sketchfab.com/3d-models/inktober-day-12-dragon-93ec917f35334836b9101b1bba72038b"
-              >
-                Dragon
-              </a>
             </div>
             <div className={styles.section}>
               <p>Sound</p>
