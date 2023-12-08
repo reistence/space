@@ -76,9 +76,8 @@ const About = ({ currentPageValue }) => {
           <div className={styles.pic}>{/* <img src={pic} /> */}</div>
         </div>
         <p ref={pRef}>
-          My name is Valerio and I'm a full stack web developer. I deeply love
-          the fusion of artistry and functionality even tough this one leans
-          only towards the first end.
+          Hi I'm Gunter. I'm a full stack web developer and I deeply love the
+          fusion of artistry and functionality.
           {/* I have an unwavering
           enthusiasm for crafting digital experiences that are not only visually
           captivating but also incredibly practical. */}
