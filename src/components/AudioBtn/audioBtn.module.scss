@@ -10,7 +10,9 @@
 
   & > span {
     position: absolute;
+    font-family: "space-body" !important;
     top: -20px;
+    font-size: 11px;
     left: 0px;
     width: 7em;
     animation: pulse 5s ease 0s infinite normal forwards;

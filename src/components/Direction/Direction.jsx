@@ -7,7 +7,7 @@ function Direction({ currentPageValue }) {
     return (
       <div className={styles.slide}>
         <img src={chev} alt="chevron" />
-        <span>Scroll to fly</span>
+        <span>Scroll</span>
       </div>
     );
   }
