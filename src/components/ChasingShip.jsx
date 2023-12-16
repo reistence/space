@@ -66,7 +66,7 @@ export function ChasingShip(props) {
   });
 
   const { scale } = useSpring({
-    scale: propulsor ? 0.8 : 0,
+    scale: propulsor ? 0.5 : 0,
     config: config.wobbly,
   });
 
@@ -82,10 +82,14 @@ export function ChasingShip(props) {
 
     window.addEventListener("mousedown", speedUp);
     window.addEventListener("mouseup", slowDown);
+    window.addEventListener("touchstart", speedUp);
+    window.addEventListener("touchend", slowDown);
 
     return () => {
       window.removeEventListener("mousedown", speedUp);
       window.removeEventListener("mouseup", slowDown);
+      window.addEventListener("touchstart", speedUp);
+      window.addEventListener("touchend", slowDown);
     };
   }, []);
 
@@ -135,7 +139,7 @@ export function ChasingShip(props) {
             {propulsor && (
               <animated.group
                 name="Propulsor_3"
-                position={[0.3, -0.1, 0.6]}
+                position={[0, 0.4, -1.3]}
                 // scale={[1, 1, 1.48]}
                 scale={scale}
               >
