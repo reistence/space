@@ -62,7 +62,7 @@ export function Spaceboi(props) {
 
   useFrame(() => {
     // particlesRef.current.rotation.z += 0.0001;
-    particlesRef.current.rotation.z += 0.0001;
+    particlesRef.current.rotation.z += 0.0005;
     blackPlanetRef.current.rotation.z += 0.009;
     blackPlanetRef2.current.rotation.z += 0.009;
     whiteStripePlanet.current.rotation.z += 0.005;
@@ -70,6 +70,16 @@ export function Spaceboi(props) {
   });
   return (
     <group {...props} dispose={null} ref={spaceRef}>
+      <mesh
+        castShadow
+        receiveShadow
+        ref={particlesRef}
+        geometry={nodes.particles_Material002_0.geometry}
+        material={materials["Material.002"]}
+        position={[9, 8, 9]}
+        rotation={[1.5, 0, 0]}
+        scale={0.408}
+      />
       <group scale={0.01}>
         <group
           rotation={[-Math.PI / 2, 0, 0]}
@@ -169,6 +179,7 @@ export function Spaceboi(props) {
           rotation={[-Math.PI / 2, 0, -Math.PI / 2]}
           scale={20.408}
         />
+
         <mesh
           castShadow
           receiveShadow

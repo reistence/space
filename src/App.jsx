@@ -144,13 +144,13 @@ function App() {
         </ScrollControls>
       </Canvas>
       {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
-      <About currentPageValue={currentPageValue} openText={openText} />
+      {/* <About currentPageValue={currentPageValue} openText={openText} />
 
       <Tooling currentPageValue={currentPageValue} />
       <Experience currentPageValue={currentPageValue} />
       <Contacts currentPageValue={currentPageValue} />
       <Direction currentPageValue={currentPageValue} />
-      <Credits currentPageValue={currentPageValue} />
+      <Credits currentPageValue={currentPageValue} /> */}
       <div className="cursor-style" ref={cursor}></div>
     </div>
   );
