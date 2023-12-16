@@ -11,7 +11,7 @@ import { Spaceboi } from "./components/Spaceboi";
 import { ChanisawAstro } from "./components/ChainSawAstro";
 
 // import fly from "./fly.json";
-import fly from "./flydef.json";
+import fly from "./flytop.json";
 import { useEffect, useLayoutEffect, useMemo, useRef, useState } from "react";
 import AudioBtn from "./components/AudioBtn/AudioBtn";
 import Direction from "./components/Direction/Direction";

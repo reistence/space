@@ -50,7 +50,7 @@ const Tooling = ({ currentPageValue }) => {
       iteration += 1 / 3;
     }, 60);
   };
-  if (currentPageValue === 13 || currentPageValue === 14) {
+  if (currentPageValue === 15 || currentPageValue === 16) {
     return (
       <>
         <div className={styles.tooling}>

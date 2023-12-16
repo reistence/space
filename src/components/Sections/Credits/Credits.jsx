@@ -45,8 +45,8 @@ const Credits = ({ currentPageValue }) => {
   // }, [currentPageValue]);
 
   if (
-    currentPageValue === 28 ||
-    currentPageValue === 29 ||
+    // currentPageValue === 28 ||
+    // currentPageValue === 29 ||
     currentPageValue === 30
   ) {
     return (

@@ -54,8 +54,8 @@ const Experience = ({ currentPageValue }) => {
 
   if (
     // currentPageValue === 17 ||
-    currentPageValue === 18 ||
-    currentPageValue === 19
+    currentPageValue === 20 ||
+    currentPageValue === 21
   ) {
     return (
       <>

@@ -49,7 +49,7 @@ const Contacts = ({ currentPageValue }) => {
 
   if (
     // currentPageValue === 22 ||
-    currentPageValue === 23
+    currentPageValue === 25
   ) {
     return (
       <>
