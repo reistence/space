@@ -16,6 +16,10 @@
   background-position: center;
   transform-origin: 100% 100%;
 
+  &:first-child {
+    z-index: 9999;
+  }
+
   @media screen and (max-width: 600px) {
     display: none;
   }

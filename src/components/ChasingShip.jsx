@@ -37,7 +37,7 @@ export function ChasingShip(props) {
   const play = async () => await sheet.sequence.play({ rate: 0.1 });
   const pause = async () => await sheet.sequence.pause();
   useFrame((state) => {
-    if (group.current) {
+    if (group.current && plane) {
       plane.onValuesChange((val) => {
         group.current.position.x = val.position.x;
         group.current.position.y = val.position.y;
