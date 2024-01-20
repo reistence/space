@@ -16,7 +16,7 @@ import spring from "../../../assets/icons/spring.png";
 import js from "../../../assets/icons/js.png";
 import astro from "../../../assets/icons/astro.png";
 
-const Tooling = ({ currentPageValue }) => {
+const Tooling = ({ currentPageValue, visible }) => {
   const initialValue = "Tooling";
   const [text, setText] = useState(initialValue);
   const titleRef = useRef();
@@ -50,14 +50,14 @@ const Tooling = ({ currentPageValue }) => {
       iteration += 1 / 3;
     }, 60);
   };
-  if (currentPageValue === 15 || currentPageValue === 16) {
+  if (currentPageValue === 15 || currentPageValue === 16 || visible) {
     return (
       <>
         <div className={styles.tooling}>
           <div className={styles.header}>
-            {/* <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
+            <h3 id="aboutTitle" ref={titleRef} onMouseOver={handleMouseOver}>
               {text}
-            </h3> */}
+            </h3>
           </div>
           <div className={styles.orbit}>
             <ul className={styles.orbitWrap}>

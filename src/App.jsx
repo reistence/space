@@ -1,25 +1,31 @@
-import { Canvas } from "@react-three/fiber";
 import "./App.scss";
-import { ScrollControls } from "@react-three/drei";
-import { getProject, val } from "@theatre/core";
-import { SheetProvider } from "@theatre/r3f";
+import * as THREE from "three";
+import { useRoute, useLocation } from "wouter";
+import { useEffect, useRef, useState } from "react";
+import { Canvas, extend, useFrame, useThree } from "@react-three/fiber";
+import {
+  useCursor,
+  MeshPortalMaterial,
+  CameraControls,
+  Gltf,
+  Text,
+  Html,
+} from "@react-three/drei";
 
-// import fly from "./fly.json";
-import fly from "./flytop.json";
-import { useEffect, useMemo, useRef, useState } from "react";
-// routing
+import { easing, geometry } from "maath";
+import { suspend } from "suspend-react";
 
+extend(geometry);
+const medium = import("/font/OtherFuture.ttf");
 //components
 import AudioBtn from "./components/AudioBtn/AudioBtn";
-import Direction from "./components/Direction/Direction";
-import About from "./components/Sections/About/About";
-import Tooling from "./components/Sections/Tooling/Tooling";
-import Experience from "./components/Sections/Experience/Experience";
-import Contacts from "./components/Sections/Contacts/Contacts";
-import Credits from "./components/Sections/Credits/Credits";
-import WorkInProgress from "./components/Sections/working/WorkInProgress";
 
 import Scene from "./Scene";
+import { Spaceboi } from "./components/Spaceboi";
+import { RollerCoaster } from "./components/RollerCoaster";
+import Tooling from "./components/Sections/Tooling/Tooling";
+import { Space } from "./components/Space";
+import { Astronauts } from "./components/Astronauts";
 
 function App() {
   const cursor = useRef(null);
@@ -86,12 +92,8 @@ function App() {
     }
   };
 
-  const sheet = useMemo(
-    () => getProject("Fly Through", { state: fly }).sheet("Scene"),
-    []
-  );
-
-  console.log(currentPageValue);
+  const [, params] = useRoute("/item/:id");
+  const [, setLocation] = useLocation();
 
   return (
     <div
@@ -100,33 +102,161 @@ function App() {
       onMouseLeave={hideCursor}
       onMouseEnter={showCursor}
     >
-      {/* <Header sheet={sheet} /> */}
-
       <AudioBtn
         handleSoundToggle={handleSoundToggle}
         isMuted={isMuted}
         currentPageValue={currentPageValue}
       />
-      <Canvas gl={{ preserveDrawingBuffer: true }}>
-        <ScrollControls pages={30} damping={1} maxSpeed={0.1}>
-          <SheetProvider sheet={sheet}>
-            <Scene
-              currentPageValue={currentPageValue}
-              setCurrentPageValue={setCurrentPageValue}
-            />
-          </SheetProvider>
-        </ScrollControls>
-      </Canvas>
-      {/* <WorkInProgress currentPageValue={currentPageValue} /> */}
-      <About currentPageValue={currentPageValue} />
+      <Canvas
+        camera={{
+          fov: 75,
+          position: [1, 4, 50],
+          minPolarAngle: 0,
+          maxZoom: 10,
+        }}
+        eventSource={document.getElementById("root")}
+        eventPrefix="client"
+        // minPolarAngle={0}
+      >
+        <color attach="background" args={["#000"]} />
+        <Frame
+          id="a"
+          name={`experience`}
+          bg="#e4cdac"
+          position={[-2.15, 0.5, 0]}
+          rotation={[0, 0.5, 0]}
+        >
+          <Gltf src="/space_boi.glb" scale={0.1} position={[0, -0.7, -2]} />
+        </Frame>
+        <Frame id="b" name="about" position={[0, 2, 0]}>
+          <Gltf src="/space_boi.glb" scale={0.1} position={[0, -2, -3]} />
+        </Frame>
+        <Frame
+          id="c"
+          name="tooling"
+          bg="#111111"
+          position={[2.15, 0.5, 0]}
+          rotation={[0, 0, 0]}
+        >
+          <RollerCoaster scale={0.1} position={[0, 0, -2]} active />
+        </Frame>
+        <Frame
+          id="d"
+          name="credits"
+          bg="#111111"
+          position={[0, -1.5, 0]}
+          rotation={[0, 0, 0]}
+        >
+          <Astronauts scale={0.0008} position={[0, -1, -4]} />
+        </Frame>
 
-      <Tooling currentPageValue={currentPageValue} />
-      <Experience currentPageValue={currentPageValue} />
-      <Contacts currentPageValue={currentPageValue} />
-      <Direction currentPageValue={currentPageValue} />
-      <Credits currentPageValue={currentPageValue} />
+        <Space scale={1} position={[0, -10, 0]} />
+
+        <Rig />
+      </Canvas>
+
+      <a
+        style={{ position: "absolute", top: 40, right: 40, fontSize: "13px" }}
+        // href="/"
+        onClick={() => setLocation("/")}
+      >
+        {params ? "< back" : "double click to enter portal"}
+      </a>
+
+      <Tooling visible={Boolean(params?.id === "c")} />
+
       <div className="cursor-style" ref={cursor}></div>
     </div>
+  );
+}
+
+function Frame({
+  id,
+  name,
+  author,
+  bg,
+  width = 1,
+  height = 1.61803398875,
+  children,
+  ...props
+}) {
+  const portal = useRef();
+  const [, setLocation] = useLocation();
+  const [, params] = useRoute("/item/:id");
+  const [hovered, hover] = useState(false);
+  useCursor(hovered);
+  useFrame((state, dt) =>
+    easing.damp(portal.current, "blend", params?.id === id ? 1 : 0, 0.2, dt)
+  );
+  return (
+    <group {...props}>
+      <Text
+        font={suspend(medium).default}
+        fontSize={0.1}
+        anchorY="top"
+        anchorX="left"
+        lineHeight={0.8}
+        position={[-0.375, 1, 0.01]}
+        material-toneMapped={false}
+      >
+        {name}
+      </Text>
+      {/* <Text
+        font={suspend(medium).default}
+        fontSize={0.1}
+        anchorX="right"
+        position={[0.4, -0.659, 0.01]}
+        material-toneMapped={false}
+      >
+        {id}
+      </Text> */}
+      <Text
+        font={suspend(medium).default}
+        fontSize={0.04}
+        anchorX="right"
+        position={[0.0, -0.677, 0.01]}
+        material-toneMapped={false}
+      >
+        {author}
+      </Text>
+      <mesh
+        name={id}
+        onClick={(e) => (
+          e.stopPropagation(), setLocation("/item/" + e.object.name)
+        )}
+        onPointerOver={(e) => hover(true)}
+        onPointerOut={() => hover(false)}
+      >
+        <sphereGeometry args={[0.7, 1000]} />
+        <MeshPortalMaterial
+          ref={portal}
+          events={params?.id === id}
+          side={THREE.DoubleSide}
+        >
+          <color attach="background" args={[bg]} />
+          {children}
+        </MeshPortalMaterial>
+      </mesh>
+    </group>
+  );
+}
+
+function Rig({
+  position = new THREE.Vector3(0, 2, 6),
+  focus = new THREE.Vector3(0, 0, 0),
+}) {
+  const { controls, scene } = useThree();
+  const [, params] = useRoute("/item/:id");
+  useEffect(() => {
+    const active = scene.getObjectByName(params?.id);
+    if (active) {
+      active.parent.localToWorld(position.set(0, 0.5, 0.25));
+      active.parent.localToWorld(focus.set(0, 0, -2));
+    }
+    controls?.setLookAt(...position.toArray(), ...focus.toArray(), true);
+  });
+  return (
+    <CameraControls makeDefault minPolarAngle={0} maxPolarAngle={Math.PI / 2} />
   );
 }
 
