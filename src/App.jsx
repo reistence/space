@@ -26,6 +26,9 @@ import { RollerCoaster } from "./components/RollerCoaster";
 import Tooling from "./components/Sections/Tooling/Tooling";
 import { Space } from "./components/Space";
 import { Astronauts } from "./components/Astronauts";
+import { RedTriangles } from "./components/RedTriangles";
+import { Frequency } from "./components/Frequency";
+import { Spin } from "./components/Spin";
 
 function App() {
   const cursor = useRef(null);
@@ -123,20 +126,20 @@ function App() {
           id="a"
           name={`experience`}
           bg="#e4cdac"
-          position={[-2.15, 0.5, 0]}
+          position={[0, 0.1, -5]}
           rotation={[0, 0.5, 0]}
         >
           <Gltf src="/space_boi.glb" scale={0.1} position={[0, -0.7, -2]} />
         </Frame>
-        <Frame id="b" name="about" position={[0, 2, 0]}>
+        <Frame id="b" name="about" position={[0, 0.1, 5]} rotation={[0, -3, 0]}>
           <Gltf src="/space_boi.glb" scale={0.1} position={[0, -2, -3]} />
         </Frame>
         <Frame
           id="c"
           name="tooling"
           bg="#111111"
-          position={[2.15, 0.5, 0]}
-          rotation={[0, 0, 0]}
+          position={[4, 0.1, 0]}
+          rotation={[0, 5, 0]}
         >
           <RollerCoaster scale={0.1} position={[0, 0, -2]} active />
         </Frame>
@@ -144,13 +147,22 @@ function App() {
           id="d"
           name="credits"
           bg="#111111"
-          position={[0, -1.5, 0]}
-          rotation={[0, 0, 0]}
+          position={[-4, 0.1, 0]}
+          rotation={[0, -5, 0]}
         >
-          <Astronauts scale={0.0008} position={[0, -1, -4]} />
+          {/* <Astronauts scale={0.0008} position={[0, -1, -4]} /> */}
+          <ambientLight intensity={10} color={"white"} />
+
+          <Spin scale={1} position={[0, -1.5, -4]} rotation={[1, 0, 0]} />
         </Frame>
 
-        <Space scale={1} position={[0, -10, 0]} />
+        {/* <Space scale={1} position={[0, -10, 0]} /> */}
+        <ambientLight intensity={1} color={"red"} />
+        <RedTriangles
+          scale={50}
+          position={[-1, -3, 0]}
+          rotation={[4.7, 0, 0]}
+        />
 
         <Rig />
       </Canvas>
@@ -242,7 +254,7 @@ function Frame({
 }
 
 function Rig({
-  position = new THREE.Vector3(0, 2, 6),
+  position = new THREE.Vector3(0, 0, 1),
   focus = new THREE.Vector3(0, 0, 0),
 }) {
   const { controls, scene } = useThree();
