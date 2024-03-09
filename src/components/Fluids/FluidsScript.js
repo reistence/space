@@ -1,5 +1,6 @@
 const FluidsScript = () => {
   const element = document.getElementById("fluids");
+  console.log(element);
   if (element) {
     const canvas = element;
     resizeCanvas();
@@ -1671,7 +1672,7 @@ const FluidsScript = () => {
       updatePointerDownData(pointer, -1, posX, posY);
     });
 
-    canvas.addEventListener("mousemove", (e) => {
+    window.addEventListener("mousemove", (e) => {
       let pointer = pointers[0];
       if (!pointer.down) return;
       let posX = scaleByPixelRatio(e.offsetX);

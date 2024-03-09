@@ -116,7 +116,7 @@ function App() {
         isMuted={isMuted}
         currentPageValue={currentPageValue}
       />
-      <Canvas gl={{ preserveDrawingBuffer: true }}>
+      <Canvas gl={{ preserveDrawingBuffer: true }} color="transparent">
         <ScrollControls pages={30} damping={1} maxSpeed={0.1}>
           <SheetProvider sheet={sheet}>
             <Scene
