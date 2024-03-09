@@ -3,8 +3,8 @@
   width: 30px;
   border-radius: 50%;
   // border: 0.5px solid black;
-  background-color: rgb(175, 168, 168);
-  // mix-blend-mode: difference;
+  // background-color: rgb(175, 168, 168) !important;
+  mix-blend-mode: luminosity;
   position: fixed;
   // filter: invert(1);
   top: 0;
@@ -13,9 +13,12 @@
   z-index: 1;
   pointer-events: none;
   background-size: contain;
-  background-position: center;
-  transform-origin: 100% 100%;
+  // background-position: center;
+  // transform-origin: 100% 100%;
 
+  // &:first-child {
+  //   width: 100px;
+  // }
   @media screen and (max-width: 600px) {
     display: none;
   }
