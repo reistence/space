@@ -5,8 +5,10 @@ import Loading from "./components/Loading/Loading.jsx";
 import { lazy } from "react";
 import Cursor from "./components/Cursor/Cursor.jsx";
 import Wave from "./components/Cursor/Wave.jsx";
+import Fluids from "./components/Fluids/Fluids.jsx";
 
 const App = lazy(() => import("./App.jsx"));
+const NApp = lazy(() => import("./NewApp.jsx"));
 // import studio from "@theatre/studio";
 // import extension from "@theatre/r3f/dist/extension";
 // studio.extend(extension);
@@ -15,7 +17,8 @@ const App = lazy(() => import("./App.jsx"));
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
     <Suspense fallback={<Loading />}>
-      <App />
+      <Fluids />
+      <NApp />
       {/* <SpaceShip /> */}
     </Suspense>
     <Wave />

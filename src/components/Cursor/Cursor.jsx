@@ -5,7 +5,7 @@ import { createPortal } from "react-dom";
 import styles from "./cursor.module.scss";
 // import circ from "../../assets/icons/circle.png";
 const Cursor = ({ currentPageValue }) => {
-  const circleArr = Array.from({ length: 100 });
+  const circleArr = Array.from({ length: 50 });
   // cursor
   const myRef = useRef(null);
   const [mounted, setMounted] = useState(false);
